@@ -1,0 +1,14 @@
+:root {
+  --color-primary: #000;
+  --color-primary-light: #454545;
+  --color-secondary: #0792bc;
+  --color-accent: #f86363;
+  --color-neutral-grey: #c1c1c1;
+  --color-neutral-light-grey: #e2e2e2;
+
+  --font-primary: "Verdana", sans-serif;
+}
+
+html {
+  font-family: var(--font-primary);
+}
