@@ -1,3 +1,8 @@
 permalink: pretty
 
 theme: jekyll_patternbot
+
+patternbot:
+  title: "Pew Pew"
+  description: |
+    A Star Wars themed merchandise site that jedi and sith alike can buy various apparel and collectibles. Will you follow the light or be consumed by the dark side?
