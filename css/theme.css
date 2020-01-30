@@ -36,5 +36,5 @@ a {
 
 
 mark {
-  color: var(--color-accent);
+  background-color: var(--color-accent);
 }
