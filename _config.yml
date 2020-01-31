@@ -13,6 +13,7 @@ patternbot:
     patterns:
       brand.logos: "--color-primary-opposite"
       brand.colors: "--color-primary-opposite"
+      typography.size: "--color-primary-opposite"
   rationales:
     typefaces.primary: |
       Verdana was selected becasue it is a clean, simple font. Verdana is to be used for all text with varying weights and case.

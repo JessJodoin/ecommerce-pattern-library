@@ -38,3 +38,8 @@ a {
 mark {
   background-color: var(--color-accent);
 }
+
+li {
+  font-weight: bold;
+  text-transform: uppercase;
+}
