@@ -23,4 +23,4 @@ patternbot:
     colors.accent: |
       The accent colour is another vibrant and bright colour, and should be used in most hover situations.
     colors.neutral: |
-      The neutral colours should be used to
+      The neutral colours should be used to accent cards and other elements.

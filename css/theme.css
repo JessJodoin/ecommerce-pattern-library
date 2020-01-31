@@ -39,7 +39,7 @@ mark {
   background-color: var(--color-accent);
 }
 
-ul {
+li {
   text-decoration: none;
   list-style-type: none;
 }
