@@ -34,12 +34,11 @@ a {
   background-color: var(--color-secondary);
 }
 
+ul li {
+  text-decoration: none;
+  list-style-type: none;
+}
 
 mark {
   background-color: var(--color-accent);
-}
-
-li {
-  text-decoration: none;
-  list-style-type: none;
 }
