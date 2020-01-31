@@ -5,4 +5,21 @@ theme: jekyll_patternbot
 patternbot:
   title: "Pew Pew"
   description: |
-    A Star Wars themed merchandise site that jedi and sith alike can buy various apparel and collectibles. Will you follow the light or be consumed by the dark side?
+    A Star Wars themed merchandise site that jedi and sith alike can buy various apparel and collectibles.
+    Will you follow the light or be consumed by the dark side?
+  colors:
+    backgroud: "--color-primary"
+    accent: "--color-primary-opposite"
+    pattens:
+      brand.logos: "--color-primary-opposite"
+      brand.colours: "--color-primary-opposite"
+  rationales:
+    typefaces.primary: |
+      Verdana was selected becasue it is a clean, simple font.
+      Verdana is to be used for all text with varying weights and case.
+    colors.primary: |
+      The primary colours represent the galaxy above. They should be used for the text and in backgrounds.
+    colors.secondary: |
+      The secondary colour is more vibrant and bright, and should be used for buttons and in some hover situations.
+    colors.accent: |
+      The accent colour is another vibrant and bright colour, and should be used in most hover situations.
