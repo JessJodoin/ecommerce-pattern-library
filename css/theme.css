@@ -40,6 +40,5 @@ mark {
 }
 
 li {
-  font-weight: bold;
-  text-transform: uppercase;
+  text-decoration: none;
 }
