@@ -8,7 +8,7 @@ patternbot:
     A Star Wars themed merchandise site that jedi and sith alike can buy various apparel and collectibles.
     Will you follow the light or be consumed by the dark side?
   colors:
-    backgroud: "--color-primary-light"
+    background: "--color-primary"
     accent: "--color-primary-opposite"
   rationales:
     typefaces.primary: |
