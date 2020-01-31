@@ -39,6 +39,6 @@ mark {
   background-color: var(--color-accent);
 }
 
-li {
+ul {
   text-decoration: none;
 }
