@@ -29,13 +29,27 @@ h6 {
 }
 
 a {
-  text-decoration: none;
-  color: var(--color-primary-opposite);
-  background-color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
-ul li {
-  list-style-type: none;
+a:hover {
+  color: var(--color-accent);
+}
+
+ul {
+  list-style-type: circle;
+}
+
+ul > li::before {
+  display: none;
+}
+
+ol {
+  list-style-type: upper-roman;
+}
+
+ol > li::before {
+  display: none;
 }
 
 mark {

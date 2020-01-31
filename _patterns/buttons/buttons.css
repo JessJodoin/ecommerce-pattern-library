@@ -24,13 +24,13 @@
 }
 
 .btn-light {
-  background-color: var(--color-neutral-light-grey);
-  border-color: var(--color-neutral-light-grey);
-  color: var(--color-secondary);
+  background-color: var(--color-neutral-grey);
+  border-color: var(--color-neutral-grey);
+  color: var(--color-primary-opposite);
 }
 
 .btn-light:hover {
-  background-color: var(--color-neutral-grey);
-  border-color: var(--color-neutral-grey);
-  color: var(--color-accent);
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
+  color: var(--color-secondary);
 }
