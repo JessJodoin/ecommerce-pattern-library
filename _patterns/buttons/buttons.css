@@ -34,7 +34,3 @@
   border-color: var(--color-primary-light);
   color: var(--color-secondary);
 }
-
-.btn-icon {
-  stroke: var(--color-primary-opposite);
-}
