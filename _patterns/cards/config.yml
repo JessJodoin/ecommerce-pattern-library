@@ -1,3 +1,25 @@
 patterns:
   product-cards:
     padding: 2em
+    fields:
+      - name: title
+        type: string
+        example: "Stormtrooper Bobble Head"
+      - name: term
+        type: value
+        example: "$14.99"
+      - name: image
+        type: image
+        example: "product-stbh.jpg"
+  icon-cards:
+    padding: 2em
+    fields:
+      - name: title
+        type: string
+        example: "Fast Shipping"
+      - name: details
+        type: string
+        example: "Delivered in less than 12 parsecs"
+      - name: image
+        type: image
+        example: "icons.svg#cart-icon"

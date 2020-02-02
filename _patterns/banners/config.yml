@@ -1,0 +1,27 @@
+title: "Banners"
+description: |
+  Banners of all kind! From basic to action, we got 'em all.
+
+patterns:
+  basic:
+    fields:
+      - name: title
+        type: string
+        example: "In A Galaxy Far Away..."
+      - name: details
+        type: string
+        example: "Find the best credits can buy!"
+      - name: image
+        type: image
+        example: "stars-banner.jpg"
+  call-to-action:
+    fields:
+      - name: title
+        type: string
+        example: "In A Galaxy Far Away..."
+      - name: details
+        type: string
+        example: "Find the best credits can buy!"
+      - name: image
+        type: image
+        example: "stars-banner.jpg"

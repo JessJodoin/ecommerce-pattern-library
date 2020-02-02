@@ -1,0 +1,69 @@
+title: "Buttons"
+description: |
+  Buttons should be used in situations where a dramrtic, obvious action is required.
+  Try not to overuse buttons becasue they should be the primary call-to-action for a screen.
+
+patterns:
+  basic:
+    title: "Basic"
+    description: |
+      Default to using the basic button. It should be used in front of light backgounds.
+    width: "12em"
+    fields:
+      - name: title
+        type: string
+        example: "Add To Cart"
+  icon-button-basic:
+    title: "Basic Icon"
+    description: |
+      Default to using the basic icon button. It should be used in front of light backgounds.
+    width: "12em"
+    fields:
+      - name: title
+        type: string
+        example: "Add To Cart"
+      - name: image
+        type: image
+        example: "icons.svg#cart-icon"
+  ghost:
+    title: "Ghost"
+    description: |
+      The ghost button is specifically for banners, where it will be placed in front of busy images.
+    background: "--color-primary-light"
+    fields:
+      - name: title
+        type: string
+        example: "Add To Cart"
+  icon-button-ghost:
+    title: "Ghost Icon"
+    description: |
+      The icon ghost button is specifically for banners, where it will be placed in front of busy images.
+    background: "--color-primary-light"
+    fields:
+      - name: title
+        type: string
+        example: "Add To Cart"
+      - name: image
+        type: image
+        example: "icons.svg#cart-icon"
+  light:
+    title: "Light"
+    description: |
+      The light button should be used in front of dark backgounds.
+    width: "12em"
+    fields:
+      - name: title
+        type: string
+        example: "Shop New Arrivals"
+  icon-button-light:
+    title: "Light Icon"
+    description: |
+      The light icon button should be used in front of dark backgounds.
+    width: "15em"
+    fields:
+      - name: title
+        type: string
+        example: "Shop New Arrivals"
+      - name: image
+        type: image
+        example: "icons.svg#cart-icon"
