@@ -67,3 +67,24 @@ patterns:
       - name: image
         type: image
         example: "icons.svg#cart-icon"
+  submit:
+    title: "Submit Button"
+    description: |
+      The submit button should only be used in situations where a form is being submitted.
+    width: "12em"
+    fields:
+      - name: title
+        type: string
+        example: "Submit"
+  animated-icon:
+    title: "Animated Icon Button"
+    description: |
+      The animated icon button should be used in situations involving purchasing i.e. "Add To Cart" or "Buy Now" buttons.
+    width: "12em"
+    fields:
+      - name: title
+        type: string
+        example: "Buy Now"
+      - name: image
+        type: image
+        example: "icons.svg#cart-icon"

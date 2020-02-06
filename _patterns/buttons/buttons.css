@@ -34,3 +34,21 @@
   border-color: var(--color-neutral-grey);
   color: var(--color-primary-opposite);
 }
+
+.btn-submit:hover {
+  background-color: transparent;
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.animate-icon {
+  background-color: var(--color-neutral-light-grey);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.animate-icon:hover {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-primary-opposite);
+}
