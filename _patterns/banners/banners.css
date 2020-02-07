@@ -17,16 +17,9 @@
   max-height: 500px;
 }
 
-@media only screen and (min-width: 38em) {
-
-  .hero-content {
-      width: 100%;
-      position: absolute;
-      bottom: 20em;
-    }
-
-  .hero-button {
-    float: right;
+.hero-content {
+  color: var(--color-primary-opposite);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
   }
-
-}

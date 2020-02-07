@@ -1,16 +1,16 @@
 <section class="hero-banner relative">
   <div class="img-banner media">
-    <img class="img-flex" src="images/{{include.image}}" alt="">
+    <img class="img-flex" src="/images/{{include.image}}" alt="">
   </div>
 
-  <div class="hero-content">
-    <div class="grid grid-middle gutter-1-2 pad-t wrapper pad-b">
-      <div class="unit xs-1 s-1 m-1-2 l-1-2">
+  <div class="hero-content center-text">
+    <div class="gutter-1-2 pad-t wrapper pad-b">
+      <div class="">
         <h1 class="exa push-0 pad-b-1-2">{{include.title}}</h1>
-        <p class="push-0 pad-b-1-2">{{inlcude.details}}</p>
+        <p class="mega push-0 pad-b-1-2">{{include.details}}</p>
       </div>
 
-      <div class="unit xs-1 s-1 m-1-2 l-1-2 hero-button">
+      <div class="pad-t push">
         {% pattern buttons/animated-icon title="Shop New Arrivals" image="icons.svg#cart-icon" %}
       </div>
     </div>
