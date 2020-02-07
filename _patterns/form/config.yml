@@ -1,0 +1,16 @@
+title: "Forms"
+description: |
+  Forms are used in situations with a ‘submit’ button. Each field should have a unique ‘id’ and ‘for’ in the form it is placed.
+
+patterns:
+  basic:
+    title: "Basic Form Field"
+    description: |
+      This is the basic form field. It is meant for single lines of text, and can be used where necessary. This field by default is not required, which can be used for fields such as ‘address line 2’.
+    fields:
+      - name: title
+        type: string
+        example: "Name"
+      - name: id
+        type: string
+        example: "name"
