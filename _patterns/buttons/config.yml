@@ -79,7 +79,7 @@ patterns:
   animated-icon:
     title: "Animated Icon Button"
     description: |
-      The animated icon button should be used in situations involving purchasing i.e. "Add To Cart" or "Buy Now" buttons.
+      The animated icon button is to be used as an alternaitve ghost button. Also it should be used in situations involving purchasing i.e. "Add To Cart" or "Buy Now" buttons.
     width: "12em"
     fields:
       - name: title

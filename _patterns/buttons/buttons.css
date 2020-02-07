@@ -42,7 +42,7 @@
 }
 
 .animate-icon {
-  background-color: var(--color-neutral-light-grey);
+  background-color: transparent;
   border-color: var(--color-accent);
   color: var(--color-accent);
 

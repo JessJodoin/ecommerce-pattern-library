@@ -1,5 +1,23 @@
 patterns:
   product-cards:
+    title: "Product Card"
+    description: |
+      This is the standard product card. Each card should contain a product image, product title, and price.
+    padding: 2em
+    fields:
+      - name: title
+        type: string
+        example: "Stormtrooper Bobble Head"
+      - name: term
+        type: value
+        example: "$14.99"
+      - name: image
+        type: image
+        example: "product-stbh.jpg"
+  sale-card:
+    title: "Sale Card"
+    description: |
+      This is a sale product card and is used for item that go on sale. Each card must contain a product image, product title, and original price and sale price.
     padding: 2em
     fields:
       - name: title
@@ -12,6 +30,9 @@ patterns:
         type: image
         example: "product-stbh.jpg"
   icon-cards:
+    title: "Icon Card"
+    description: |
+      This is an icon card. It is used to describe some of the feature such as fast shipping.
     padding: 2em
     fields:
       - name: title

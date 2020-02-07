@@ -1,3 +1,26 @@
-.img {
-  max-height: 500px;
+.page-banner {
+  background-color: var(--color-secondary);
+  color: var(--color-primary-opposite);
+}
+
+.promotional {
+  background-color: var(--color-accent);
+  color: var(--color-primary-opposite);
+}
+
+.promotional:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-primary-opposite);
+}
+
+.hero-banner {
+  max-height: 28em;
+  position: relative;
+}
+
+.hero-content {
+  position: absolute;
+  left: 0;
+  top: 15%;
+  color: var(--color-primary-opposite);
 }

@@ -4,24 +4,35 @@ description: |
 
 patterns:
   basic:
+    title: "Sectional Banner"
+    description: |
+      A sectional banner is used to separate the various sections on the website. For this banner, no image is to be used.
     fields:
       - name: title
         type: string
-        example: "In A Galaxy Far Away..."
-      - name: details
-        type: string
-        example: "Find the best credits can buy!"
-      - name: image
-        type: image
-        example: "stars-banner.jpg"
+        example: "New Arrivals"
   call-to-action:
+    title: "Call To Action Banner"
+    description: |
+      A call to action banner is used on the main page only. It is meant to showcase new arrlivals, sales, and the top selling products.
     fields:
       - name: title
         type: string
-        example: "In A Galaxy Far Away..."
+        example: "Calling All Scavengers!"
       - name: details
         type: string
-        example: "Find the best credits can buy!"
+        example: "Come raid our new stock."
       - name: image
         type: image
         example: "stars-banner.jpg"
+  promotional-banner:
+    title: "Promotional Banner"
+    description: |
+      The promotional banner is used to promote site wide sales and new items.
+    fields:
+      - name: title
+        type: string
+        example: "All stickers are 25% off!"
+      - name: details
+        type: string
+        example: "Get some now, offer lasts until May 4th."
