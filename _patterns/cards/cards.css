@@ -1,7 +1,6 @@
 .card {
   background-color: var(--color-primary-opposite);
   border-radius: 20px;
-
 }
 
 .hover-box {
@@ -26,4 +25,14 @@
 .hover-box:hover .hover-box-img,
 .hover-box:focus .hover-box-img {
   transform: scale(1.1);
+}
+
+.sale-card {
+  position: relative;
+}
+
+.sale-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
 }

@@ -29,6 +29,9 @@ patterns:
       - name: image
         type: image
         example: "product-stbh.jpg"
+      - name: icon
+        type: image
+        example: "sale-icon.svg"
   icon-cards:
     title: "Icon Card"
     description: |
