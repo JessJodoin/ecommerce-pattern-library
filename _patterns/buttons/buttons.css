@@ -45,12 +45,18 @@
   background-color: transparent;
   border-color: var(--color-accent);
   color: var(--color-accent);
-
-  transition: all .2s ease-in-out;
 }
 
 .animate-icon:hover {
   background-color: var(--color-accent);
   border-color: var(--color-accent);
   color: var(--color-primary-opposite);
+}
+
+.icon-mover {
+  transition: all .3s ease-in-out;
+}
+
+.animate-icon:hover .icon-mover {
+  transform: rotate(-15deg);
 }
