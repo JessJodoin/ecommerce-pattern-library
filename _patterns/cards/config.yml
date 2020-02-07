@@ -26,12 +26,33 @@ patterns:
       - name: term
         type: value
         example: "$14.99"
+      - name: price
+        type: value
+        example: "$10.99"
       - name: image
         type: image
         example: "product-stbh.jpg"
       - name: icon
         type: image
-        example: "sale-icon.svg"
+        example: "icons.svg#sale-icon"
+  new-card:
+    title: "New Item Card"
+    description: |
+      This is a new product card and is used for new items added to the shop. Each card must contain a product image, product title, and original price and sale price.
+    padding: 2em
+    fields:
+      - name: title
+        type: string
+        example: "Stormtrooper Bobble Head"
+      - name: term
+        type: value
+        example: "$14.99"
+      - name: image
+        type: image
+        example: "product-stbh.jpg"
+      - name: icon
+        type: image
+        example: "icons.svg#new-icon"
   icon-cards:
     title: "Icon Card"
     description: |
@@ -47,3 +68,15 @@ patterns:
       - name: image
         type: image
         example: "icons.svg#cart-icon"
+  category-card:
+    title: "Category Card"
+    description: |
+      This is a category card and is used to link to item categories such as men, womens, sale, shirts, etc.
+    padding: 2em
+    fields:
+      - name: title
+        type: string
+        example: "Collectibles "
+      - name: image
+        type: image
+        example: "product-stpf.jpg"

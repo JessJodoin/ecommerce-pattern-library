@@ -13,14 +13,20 @@
   color: var(--color-primary-opposite);
 }
 
-.hero-banner {
-  max-height: 28em;
-  position: relative;
+.img-banner {
+  max-height: 500px;
 }
 
-.hero-content {
-  position: absolute;
-  left: 0;
-  top: 15%;
-  color: var(--color-primary-opposite);
+@media only screen and (min-width: 38em) {
+
+  .hero-content {
+      width: 100%;
+      position: absolute;
+      bottom: 20em;
+    }
+
+  .hero-button {
+    float: right;
+  }
+
 }

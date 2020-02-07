@@ -15,7 +15,7 @@
 
 .hover-box:hover .hover-box-caption {
   color: var(--color-secondary);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .hover-box-img {
@@ -27,12 +27,36 @@
   transform: scale(1.1);
 }
 
-.sale-card {
-  position: relative;
+.sale-price {
+  color: var(--color-accent);
+}
+
+.org-price {
+  text-decoration: line-through;
 }
 
 .sale-icon {
   position: absolute;
-  top: 0;
-  left: 0;
+  left: -1em;
+  top: -1em;
+}
+
+.category-title {
+  color: var(--color-primary);
+}
+
+.hover-box:hover .category-title {
+  background-color: var(--color-secondary);
+  color: var(--color-primary-opposite);
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .sale-price,
+  .org-price,
+  .prod-price {
+    text-align: right;
+  }
+
 }
