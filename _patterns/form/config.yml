@@ -7,6 +7,7 @@ patterns:
     title: "Basic Form Field"
     description: |
       This is the basic form field. It is meant for single lines of text, and can be used where necessary. This field by default is not required, which can be used for optional fields such as ‘address line 2’.
+    width: 38em
     fields:
       - name: title
         type: string
@@ -14,10 +15,17 @@ patterns:
       - name: id
         type: string
         example: "address-2"
+      - name: type
+        type: string
+        example: "text"
+      - name: placeholder
+        type: string
+        example: ""
   required-basic:
     title: "Basic Required Form Field"
     description: |
-      This is the basic required form field. It is meant for single lines of text, and can be used where necessary. This field by default is required and inlcuded an error message.
+      This is the basic required form field. It is meant for single lines of text, and should be used for forms found in the checkout, sign up, and login pages. This field by default is required and inlcuded an error message when fields are submitted without being filled.
+    width: 38em
     fields:
       - name: title
         type: string
@@ -31,3 +39,62 @@ patterns:
       - name: error
         type: string
         example: "last-name-error"
+      - name: type
+        type: string
+        example: "text"
+      - name: placeholder
+        type: string
+        example: ""
+  phone-num-field:
+    title: "Phone Number Field"
+    description: |
+      This is a phone number field. It should only be used on the checkout page.
+    width: 38em
+    fields:
+      - name: title
+        type: string
+        example: "Phone Number"
+      - name: id
+        type: string
+        example: "phone"
+      - name: details
+        type: string
+        example: "a valid phone number"
+      - name: error
+        type: string
+        example: "phone-error"
+      - name: type
+        type: string
+        example: "tel"
+      - name: placeholder
+        type: string
+        example: "(123) 456 7890"
+  email-field:
+    title: "Email Field"
+    description: |
+      This is an email field. It should only be used on the checkout page and the sign up page.
+    width: 38em
+    fields:
+      - name: title
+        type: string
+        example: "Email Address"
+      - name: id
+        type: string
+        example: "email"
+      - name: details
+        type: string
+        example: "a valid email address"
+      - name: error
+        type: string
+        example: "email-error"
+      - name: type
+        type: string
+        example: "email"
+      - name: placeholder
+        type: string
+        example: "example@email.com"
+  search:
+    title: "Search Field"
+    description: |
+      This is the search field. It is used only in the header on medium and large screens on dark backgrounds.
+    width: 20em
