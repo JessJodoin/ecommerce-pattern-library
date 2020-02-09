@@ -3,14 +3,31 @@ description: |
   Forms are used in situations with a ‘submit’ button. Each field should have a unique ‘id’ and ‘for’ in the form it is placed.
 
 patterns:
-  basic:
+  basic-form:
     title: "Basic Form Field"
     description: |
-      This is the basic form field. It is meant for single lines of text, and can be used where necessary. This field by default is not required, which can be used for fields such as ‘address line 2’.
+      This is the basic form field. It is meant for single lines of text, and can be used where necessary. This field by default is not required, which can be used for optional fields such as ‘address line 2’.
     fields:
       - name: title
         type: string
-        example: "Name"
+        example: "Address 2"
       - name: id
         type: string
-        example: "name"
+        example: "address-2"
+  required-basic:
+    title: "Basic Required Form Field"
+    description: |
+      This is the basic required form field. It is meant for single lines of text, and can be used where necessary. This field by default is required and inlcuded an error message.
+    fields:
+      - name: title
+        type: string
+        example: "Last Name"
+      - name: id
+        type: string
+        example: "last-name"
+      - name: details
+        type: string
+        example: "a last name"
+      - name: error
+        type: string
+        example: "last-name-error"

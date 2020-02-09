@@ -1,0 +1,37 @@
+.flag-optional {
+  color: var(--color-neutral-grey);
+}
+
+.is-validated input:invalid,
+.is-validated input[type="checkbox"]:invalid + label::before,
+.is-validated:invalid,
+.is-validated[type="checkbox"]:invalid + label::before {
+  border-color: #d23;
+}
+
+.error-message {
+  display: none;
+  background-color: #fdd;
+  color: #c3000f;
+  border-radius: 0 0 10px 10px;
+}
+
+.error-message-highlighted {
+  background-color: #c3000f;
+  color: #fff;
+}
+
+.is-validated > .error-message:first-child,
+.is-validated input:invalid + .error-message,
+.is-validated input:invalid + label + .error-message,
+.is-validated:invalid + .error-message,
+.is-validated:invalid + label + .error-message {
+  display: block;
+}
+
+#search-input {
+  border: 2px solid var(--color-primary);
+  border-radius: 50px;
+  background-color: var(--color-primary-opposite);
+  background-image: url('/images/icons.svg#search') 5px 5px no-repeat var(--color-primary-light);
+  padding: 12px 20px 12px 40px;
