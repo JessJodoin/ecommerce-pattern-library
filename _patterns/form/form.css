@@ -44,6 +44,11 @@ label {
   border: 3px solid var(--color-secondary);
 }
 
+[type="checkbox"] + label::before {
+  border-radius: 10px;
+  border: 3px solid var(--color-neutral-grey);
+}
+
 .search-icon {
   color: var(--color-primary-light);
 }

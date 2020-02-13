@@ -45,6 +45,36 @@ patterns:
       - name: placeholder
         type: string
         example: ""
+  basic-checkbox:
+    title: "Basic Checkbox"
+    description: |
+      This is the standard checkbox.This checkbox by default is not required, which can be used for optional elements such as agreeing to receive emails, offers, and other non-contract agreements.
+    width: 38em
+    fields:
+      - name: label
+        type: string
+        example: "Would you like to receive promotional offers?"
+      - name: id
+        type: string
+        example: "promo-offers"
+  required-checkbox:
+    title: "Basic Required Checkbox"
+    description: |
+      This is the basic required checkbox. This checkbox by default is required, which can be used for agreeing to the terms of service.
+    width: 38em
+    fields:
+      - name: label
+        type: string
+        example: "Agree to Terms and Servies"
+      - name: id
+        type: string
+        example: "tos"
+      - name: details
+        type: string
+        example: "You must agree to the Terms and Services"
+      - name: error
+        type: string
+        example: "tos-error"
   search:
     title: "Search Field"
     description: |
