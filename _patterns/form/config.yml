@@ -45,54 +45,6 @@ patterns:
       - name: placeholder
         type: string
         example: ""
-  phone-num-field:
-    title: "Phone Number Field"
-    description: |
-      This is a phone number field. It should only be used on the checkout page.
-    width: 38em
-    fields:
-      - name: title
-        type: string
-        example: "Phone Number"
-      - name: id
-        type: string
-        example: "phone"
-      - name: details
-        type: string
-        example: "a valid phone number"
-      - name: error
-        type: string
-        example: "phone-error"
-      - name: type
-        type: string
-        example: "tel"
-      - name: placeholder
-        type: string
-        example: "(123) 456 7890"
-  email-field:
-    title: "Email Field"
-    description: |
-      This is an email field. It should only be used on the checkout page and the sign up page.
-    width: 38em
-    fields:
-      - name: title
-        type: string
-        example: "Email Address"
-      - name: id
-        type: string
-        example: "email"
-      - name: details
-        type: string
-        example: "a valid email address"
-      - name: error
-        type: string
-        example: "email-error"
-      - name: type
-        type: string
-        example: "email"
-      - name: placeholder
-        type: string
-        example: "example@email.com"
   search:
     title: "Search Field"
     description: |
