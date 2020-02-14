@@ -59,6 +59,10 @@ fieldset {
   color: var(--color-neutral-grey);
 }
 
+[type="radio"] + label::before {
+  border: 3px solid var(--color-neutral-grey);
+}
+
 .search-icon {
   color: var(--color-primary-light);
 }
