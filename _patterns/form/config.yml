@@ -123,9 +123,69 @@ patterns:
       - name: description3
         type: string
         example: "Normally ships in 1 business day, unless otherwise noted."
+      - name: details
+        type: string
+        example: "You must select a delivery method"
       - name: error
         type: string
         example: "ship-error"
+  select-region:
+    title: "Region/Country Selection Field"
+    description: |
+      This is the region/country selection field. This field by default is required, and is found on the shipping and payment forms.
+    width: 38em
+    fields:
+      - name: id
+        type: string
+        example: "country"
+      - name: label
+        type: string
+        example: "Country/Region"
+      - name: details
+        type: string
+        example: "You must select a country or region"
+      - name: error
+        type: string
+        example: "region-error"
+  select-size:
+    title: "Size Selection Field"
+    description: |
+      This is the size selection field. This field by default is required, and is found on the product pages.
+    width: 38em
+    fields:
+      - name: id
+        type: string
+        example: "size"
+      - name: label
+        type: string
+        example: "Size"
+      - name: details
+        type: string
+        example: "You must select a size"
+      - name: error
+        type: string
+        example: "size-error"
+  select-quantity:
+    title: "Quantity Selection Field"
+    description: |
+      This is the quantity selection field. This field by default is required, and is found on the product pages.
+    width: 38em
+    fields:
+      - name: id
+        type: string
+        example: "quant"
+      - name: title
+        type: string
+        example: "Quantity"
+      - name: type
+        type: string
+        example: "number"
+      - name: details
+        type: string
+        example: "Please select a quantity"
+      - name: error
+        type: string
+        example: "quant-error"
   search:
     title: "Search Field"
     description: |

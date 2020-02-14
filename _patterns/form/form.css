@@ -35,7 +35,8 @@ label {
   color: var(--color-primary-light);
 }
 
-.form-fields:not([type="checkbox"]), .form-fields:not([type="radio"]) {
+.form-fields:not([type="checkbox"]),
+.form-fields:not([type="radio"]) {
   border-radius: 2em;
   border: 3px solid var(--color-neutral-grey);
   padding: 0 1em;
@@ -44,6 +45,7 @@ label {
 .form-fields:focus {
   border-radius: 50px;
   border: 3px solid var(--color-secondary);
+  color: var(--color-primary-light);
 }
 
 [type="checkbox"] + label::before {
@@ -61,6 +63,20 @@ fieldset {
 
 [type="radio"] + label::before {
   border: 3px solid var(--color-neutral-grey);
+}
+
+.select-options:not([type="checkbox"]),
+.select-options:not([type="radio"]) {
+  border-radius: 2em;
+  border: 3px solid var(--color-neutral-grey);
+  padding: 0 1em;
+  color: var(--color-neutral-grey);
+}
+
+.select-options:focus {
+  border-radius: 50px;
+  border: 3px solid var(--color-secondary);
+  color: var(--color-primary-light);
 }
 
 .search-icon {
