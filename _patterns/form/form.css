@@ -4,8 +4,10 @@
 
 .is-validated input:invalid,
 .is-validated input[type="checkbox"]:invalid + label::before,
+.is-validated input[type="radio"]:invalid + label::before,
 .is-validated:invalid,
-.is-validated[type="checkbox"]:invalid + label::before {
+.is-validated[type="checkbox"]:invalid + label::before,
+.is-validated[type="radio"]:invalid + label::before {
   border-color: #d23;
 }
 
@@ -47,6 +49,14 @@ label {
 [type="checkbox"] + label::before {
   border-radius: 10px;
   border: 3px solid var(--color-neutral-grey);
+}
+
+fieldset {
+  border-top: none;
+}
+
+.radio-desc {
+  color: var(--color-neutral-grey);
 }
 
 .search-icon {

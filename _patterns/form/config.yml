@@ -75,6 +75,57 @@ patterns:
       - name: error
         type: string
         example: "tos-error"
+  radio:
+    title: "Basic Radio Button"
+    description: |
+      This is the basic radio button. This radio button by default is required, which can be used for determining yes or no questions, or any question invloving multiple answer choices but only one option to pick.
+    width: 38em
+    fields:
+      - name: legend
+        type: string
+        example: "Choose a Delivery Method"
+      - name: id1
+        type: string
+        example: "std-ship"
+      - name: id2
+        type: string
+        example: "2d-ship"
+      - name: id3
+        type: string
+        example: "1d-ship"
+      - name: name
+        type: string
+        example: "ship"
+      - name: label1
+        type: string
+        example: "Standard Shipping"
+      - name: label2
+        type: string
+        example: "2-Day Express Shipping"
+      - name: label3
+        type: string
+        example: "1-Day Express Shipping"
+      - name: price1
+        type: string
+        example: "$ 5.99"
+      - name: price2
+        type: string
+        example: "$ 8.99"
+      - name: price3
+        type: string
+        example: "$ 11.99"
+      - name: description1
+        type: string
+        example: "Normally ships in 4–5 business days, unless otherwise noted."
+      - name: description2
+        type: string
+        example: "Normally ships in 2 business days, unless otherwise noted."
+      - name: description3
+        type: string
+        example: "Normally ships in 1 business day, unless otherwise noted."
+      - name: error
+        type: string
+        example: "ship-error"
   search:
     title: "Search Field"
     description: |

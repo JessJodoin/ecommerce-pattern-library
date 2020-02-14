@@ -1,0 +1,26 @@
+<fieldset class="push gutter-1-2 pad-t">
+  <legend class="pad-t gutter-1-2">{{include.legend}}</legend>
+
+  <input type="radio" id="{{include.id1}}" name="{{include.name}}" required aria-describedby="{{include.error}}">
+  <label class="push-2 gutter-1-2 kilo" for="{{include.id1}}">{{include.label1}}
+    <span class="block radio-price push-1-2 gutter">{{include.price1}}</span>
+    <span class="block radio-desc gutter">{{include.description1}}</span>
+  </label>
+
+  <input type="radio" id="{{include.id2}}" name="{{include.name}}" required aria-describedby="{{include.error}}">
+  <label class="push-2 gutter-1-2 kilo" for="{{include.id2}}">{{include.label2}}
+    <span class="block radio-price push-1-2 gutter">{{include.price2}}</span>
+    <span class="block radio-desc gutter">{{include.description2}}</span>
+  </label>
+
+  <input type="radio" id="{{include.id3}}" name="{{include.name}}" required aria-describedby="{{include.error}}">
+  <label class="push-2 gutter-1-2 kilo" for="{{include.id3}}">{{include.label3}}
+    <span class="block radio-price push-1-2 gutter">{{include.price3}}</span>
+    <span class="block radio-desc gutter">{{include.description3}}</span>
+  </label>
+
+  <p class="error-message milli island-1-4 push-0" id="{{include.error}}">
+    <i class="icon i-16"><svg><use xlink:href="/images/icons.svg#error" /></svg></i>
+    <span class="icon-label">{{include.details}}</span>
+  </p>
+</fieldset>
