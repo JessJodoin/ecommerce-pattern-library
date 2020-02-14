@@ -79,7 +79,6 @@ patterns:
     title: "Basic Radio Button"
     description: |
       This is the basic radio button. This radio button by default is required, which can be used for determining yes or no questions, or any question invloving multiple answer choices but only one option to pick.
-    width: 38em
     fields:
       - name: legend
         type: string
@@ -186,6 +185,17 @@ patterns:
       - name: error
         type: string
         example: "quant-error"
+  warning-fieldset:
+    title: "Example of a Fieldset with Warnings"
+    description: |
+      This is an example of a fieldset with warnings.
+    fields:
+      - name: formtitle
+        type: string
+        example: "Checkout"
+      - name: formalert
+        type: string
+        example: "There are some items that require your attention"
   search:
     title: "Search Field"
     description: |

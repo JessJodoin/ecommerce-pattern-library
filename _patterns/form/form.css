@@ -4,19 +4,9 @@
 
 .is-validated input:invalid,
 .is-validated select:invalid + label::before,
-.is-validated input[type="checkbox"]:invalid + label::before,
-.is-validated input[type="radio"]:invalid + label::before,
-.is-validated input[type="number"]:invalid + label::before,
-.is-validated input[type="email"]:invalid + label::before,
-.is-validated input[type="tel"]:invalid + label::before,
-.is-validated input[type="password"]:invalid + label::before,
+.is-validated input:invalid + label::before,
 .is-validated:invalid,
-.is-validated[type="checkbox"]:invalid + label::before,
-.is-validated[type="radio"]:invalid + label::before,
-.is-validated[type="number"]:invalid + label::before,
-.is-validated[type="email"]:invalid + label::before,
-.is-validated[type="tel"]:invalid + label::before,
-.is-validated[type="password"]:invalid + label::before {
+.is-validated:invalid + label::before {
   border-color: var(--color-alert);
 }
 
@@ -33,6 +23,7 @@
 }
 
 .is-validated > .error-message:first-child,
+.is-validated > fieldset > .error-message:nth-child(2),
 .is-validated input:invalid + .error-message,
 .is-validated input:invalid + label + .error-message,
 .is-validated:invalid + .error-message,
@@ -59,6 +50,7 @@ label {
 }
 
 [type="checkbox"] + label::before {
+  margin-right: .6em;
   border-radius: 10px;
   border: 3px solid var(--color-neutral-grey);
 }
@@ -67,11 +59,17 @@ fieldset {
   border-top: none;
 }
 
+.radio-price,
+.radio-desc {
+  padding-left: 2.4em;
+}
+
 .radio-desc {
   color: var(--color-neutral-grey);
 }
 
 [type="radio"] + label::before {
+  margin-right: .6em;
   border: 3px solid var(--color-neutral-grey);
 }
 

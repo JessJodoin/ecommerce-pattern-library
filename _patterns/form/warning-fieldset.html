@@ -1,29 +1,49 @@
-<form class="max-length island" method="post" action="#" novalidate>
-  <fieldset>
-    <legend>{{include.formtitle}}</legend>
+<form class="island-1-2" method="post" action="#" novalidate>
+  <fieldset class="push-0 gutter-1-2">
+    <legend class="push-0 gutter-1-2 tera">{{include.formtitle}}</legend>
     <div class="error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
-      <h3 class="push-0">
-        <i class="icon i-32"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
-        <span class="icon-label">{{include.formalert}}</span>
+      <h3 class="push-0 kilo">
+        <i class="icon i-32"><svg><use xlink:href="/images/icons.svg#warning" /></svg></i>
+        <span class="icon-label gutter-1-4">{{include.formalert}}</span>
       </h3>
     </div>
+
+    <div class="grid">
+      <div class="unit xs-1 s-1 m-1-2 l-1-2">
+        {% pattern form/required-basic title="First Name" id="first-name" details="a first name" error="first-name-error" type="text" placeholder="" %}
+      </div>
+
+      <div class="unit xs-1 s-1 m-1-2 l-1-2">
+        {% pattern form/required-basic title="Last Name" id="last-name" details="a last name" error="last-name-error" type="text" placeholder="" %}
+      </div>
+
+      <div class="unit xs-1 s-1 m-1 l-1">
+        {% pattern form/required-basic title="Address 1" id="address-2" details="an address" error="address1-error" type="text" placeholder="" %}
+      </div>
+
+      <div class="unit xs-1 s-1 m-1 l-1">
+        {% pattern form/basic-form title="Address 2" id="address-2" type="text" placeholder="" %}
+      </div>
+
+      <div class="unit xs-1 s-1 m-1 l-1">
+        {% pattern form/select-region id="country" label="Country/Region" details="You must select a country or region" error="region-error" %}
+      </div>
+
+      <div class="unit xs-1 s-1 m-1 l-1">
+        {% pattern form/radio legend="Choose a Delivery Method" id1="std-ship" id2="2d-ship" id3="1d-ship" name="ship" label1="Standard Shipping" label2="2-Day Express Shipping" label3="1-Day Express Shipping" price1="5.99" price2="8.99" price3="11.99" description1="Normally ships in 4–5 business days, unless otherwise noted." description2="Normally ships in 2 business days, unless otherwise noted." description3="Normally ships in 1 business day, unless otherwise noted." details="You must select a delivery method" error="ship-error" %}
+      </div>
+
+      <div class="unit xs-1 s-1 m-1 l-1">
+        {% pattern form/basic-checkbox label="Would you like to receive promotional offers?" id="promo-offers" %}
+      </div>
+
+      <div class="unit xs-1 s-1 m-1 l-1">
+        {% pattern form/required-checkbox label="Agree to Terms and Servies" id="tos" details="You must agree to the Terms and Services" error="tos-error" %}
+      </div>
+    </div>
+
+    <div class="center-content">
+      {% pattern buttons/submit title="Submit" %}
+    </div>
   </fieldset>
-
-  <div class="grid">
-    <div class="unit xs-1 sm-1 m-1-2 l-1-2">
-
-    </div>
-
-    <div>
-
-    </div>
-
-    <div>
-
-    </div>
-
-    <div>
-
-    </div>
-  </div>
 </form>

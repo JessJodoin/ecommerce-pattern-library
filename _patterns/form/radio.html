@@ -1,26 +1,34 @@
-<fieldset class="push gutter-1-2 pad-t">
+<fieldset class="push-1-2 gutter-1-2 pad-t">
   <legend class="pad-t gutter-1-2">{{include.legend}}</legend>
 
-  <input type="radio" id="{{include.id1}}" name="{{include.name}}" required aria-describedby="{{include.error}}">
-  <label class="push-2 gutter-1-2 kilo" for="{{include.id1}}">{{include.label1}}
-    <span class="block radio-price push-1-2 gutter">&#36 {{include.price1}}</span>
-    <span class="block radio-desc gutter">{{include.description1}}</span>
-  </label>
+  <div class="grid grid-middle">
+    <div class="unit xs-1 s-1 m-1-2 l-1-3 gutter-1-4">
+      <input type="radio" id="{{include.id1}}" name="{{include.name}}" required aria-describedby="{{include.error}}">
+      <label class="push-2 gutter-1-2 kilo" for="{{include.id1}}">{{include.label1}}
+        <span class="block radio-price push-1-2 gutter">&#36 {{include.price1}}</span>
+        <span class="block radio-desc gutter">{{include.description1}}</span>
+      </label>
+    </div>
 
-  <input type="radio" id="{{include.id2}}" name="{{include.name}}" required aria-describedby="{{include.error}}">
-  <label class="push-2 gutter-1-2 kilo" for="{{include.id2}}">{{include.label2}}
-    <span class="block radio-price push-1-2 gutter">&#36 {{include.price2}}</span>
-    <span class="block radio-desc gutter">{{include.description2}}</span>
-  </label>
+    <div class="unit xs-1 s-1 m-1-2 l-1-3 gutter-1-4">
+      <input type="radio" id="{{include.id2}}" name="{{include.name}}" required aria-describedby="{{include.error}}">
+      <label class="push-2 gutter-1-2 kilo" for="{{include.id2}}">{{include.label2}}
+        <span class="block radio-price push-1-2 gutter">&#36 {{include.price2}}</span>
+        <span class="block radio-desc gutter">{{include.description2}}</span>
+      </label>
+    </div>
 
-  <input type="radio" id="{{include.id3}}" name="{{include.name}}" required aria-describedby="{{include.error}}">
-  <label class="push-2 gutter-1-2 kilo" for="{{include.id3}}">{{include.label3}}
-    <span class="block radio-price push-1-2 gutter">&#36 {{include.price3}}</span>
-    <span class="block radio-desc gutter">{{include.description3}}</span>
-  </label>
+    <div class="unit xs-1 s-1 m-1-2 l-1-3 gutter-1-4">
+      <input type="radio" id="{{include.id3}}" name="{{include.name}}" required aria-describedby="{{include.error}}">
+      <label class="push-2 gutter-1-2 kilo" for="{{include.id3}}">{{include.label3}}
+        <span class="block radio-price push-1-2 gutter">&#36 {{include.price3}}</span>
+        <span class="block radio-desc gutter">{{include.description3}}</span>
+      </label>
+    </div>
+  </div>
 
   <p class="error-message milli island-1-4 push-0" id="{{include.error}}">
-    <i class="icon i-16"><svg><use xlink:href="/images/icons.svg#error" /></svg></i>
+    <i class="icon i-16"><svg><use xlink:href="/images/icons.svg#warning" /></svg></i>
     <span class="icon-label">{{include.details}}</span>
   </p>
 </fieldset>
