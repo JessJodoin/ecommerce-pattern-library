@@ -13,8 +13,14 @@
   color: var(--color-primary-opposite);
 }
 
+.promotional:focus {
+  background-color: var(--color-secondary);
+  color: var(--color-primary-opposite);
+}
+
 .img-banner {
   max-height: 500px;
+  background-color: var(--color-primary);
 }
 
 .hero-content {
