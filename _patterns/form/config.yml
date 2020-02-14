@@ -106,14 +106,14 @@ patterns:
         type: string
         example: "1-Day Express Shipping"
       - name: price1
-        type: string
-        example: "$ 5.99"
+        type: number
+        example: "5.99"
       - name: price2
-        type: string
-        example: "$ 8.99"
+        type: number
+        example: "8.99"
       - name: price3
-        type: string
-        example: "$ 11.99"
+        type: number
+        example: "11.99"
       - name: description1
         type: string
         example: "Normally ships in 4–5 business days, unless otherwise noted."
@@ -151,7 +151,7 @@ patterns:
     title: "Size Selection Field"
     description: |
       This is the size selection field. This field by default is required, and is found on the product pages.
-    width: 38em
+    width: 8em
     fields:
       - name: id
         type: string
@@ -169,7 +169,7 @@ patterns:
     title: "Quantity Selection Field"
     description: |
       This is the quantity selection field. This field by default is required, and is found on the product pages.
-    width: 38em
+    width: 8em
     fields:
       - name: id
         type: string

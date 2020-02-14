@@ -3,11 +3,20 @@
 }
 
 .is-validated input:invalid,
+.is-validated select:invalid + label::before,
 .is-validated input[type="checkbox"]:invalid + label::before,
 .is-validated input[type="radio"]:invalid + label::before,
+.is-validated input[type="number"]:invalid + label::before,
+.is-validated input[type="email"]:invalid + label::before,
+.is-validated input[type="tel"]:invalid + label::before,
+.is-validated input[type="password"]:invalid + label::before,
 .is-validated:invalid,
 .is-validated[type="checkbox"]:invalid + label::before,
-.is-validated[type="radio"]:invalid + label::before {
+.is-validated[type="radio"]:invalid + label::before,
+.is-validated[type="number"]:invalid + label::before,
+.is-validated[type="email"]:invalid + label::before,
+.is-validated[type="tel"]:invalid + label::before,
+.is-validated[type="password"]:invalid + label::before {
   border-color: #d23;
 }
 
@@ -15,7 +24,7 @@
   display: none;
   background-color: #fdd;
   color: #c3000f;
-  border-radius: 0 0 10px 10px;
+  border-radius: 10px;
 }
 
 .error-message-highlighted {
@@ -40,6 +49,7 @@ label {
   border-radius: 2em;
   border: 3px solid var(--color-neutral-grey);
   padding: 0 1em;
+  color: var(--color-neutral-grey);
 }
 
 .form-fields:focus {
