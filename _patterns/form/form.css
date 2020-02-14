@@ -17,19 +17,19 @@
 .is-validated[type="email"]:invalid + label::before,
 .is-validated[type="tel"]:invalid + label::before,
 .is-validated[type="password"]:invalid + label::before {
-  border-color: #d23;
+  border-color: var(--color-alert);
 }
 
 .error-message {
   display: none;
-  background-color: #fdd;
-  color: #c3000f;
+  background-color: var(--color-alert-light);
+  color: var(--color-alert-dark);
   border-radius: 10px;
 }
 
 .error-message-highlighted {
-  background-color: #c3000f;
-  color: #fff;
+  background-color: var(--color-alert-dark);
+  color: var(--color-primary-opposite);
 }
 
 .is-validated > .error-message:first-child,

@@ -6,6 +6,9 @@
   --color-accent: #f86363;
   --color-neutral-grey: #c1c1c1;
   --color-neutral-light-grey: #e2e2e2;
+  --color-alert: #d23;
+  --color-alert-light: #fdd;
+  --color-alert-dark: #c3000f;
 
   --font-primary: "Verdana", sans-serif;
 }
