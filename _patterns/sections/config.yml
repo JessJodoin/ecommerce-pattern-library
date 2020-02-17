@@ -1,0 +1,24 @@
+title: "Sections"
+description: |
+  The sections includes various groupings of information. The image sections and the text section should be used on the main page. The item summary and order summary sections should only be used on the checkout page.
+
+patterns:
+  full-img-section:
+    title: "Image Section"
+    description: |
+
+  half-img-section:
+    title: "Half Image Section"
+    description: |
+
+  text-section:
+    title: "Text Section"
+    description: |
+
+  item-summary:
+    title: "Item Summary"
+    description: |
+
+  order-summary:
+    title: "Order Summary"
+    description: |

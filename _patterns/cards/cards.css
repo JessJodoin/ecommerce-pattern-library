@@ -19,6 +19,11 @@
   text-decoration: none;
 }
 
+.hover-box:focus .hover-box-caption {
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+
 .hover-box-img {
   transition: all .2s linear;
 }
@@ -47,6 +52,12 @@
 }
 
 .hover-box:hover .category-title {
+  background-color: var(--color-secondary);
+  color: var(--color-primary-opposite);
+  text-decoration: none;
+}
+
+.hover-box:focus .category-title {
   background-color: var(--color-secondary);
   color: var(--color-primary-opposite);
   text-decoration: none;

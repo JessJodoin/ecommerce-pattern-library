@@ -18,6 +18,9 @@ patterns:
       - name: image
         type: image
         example: "product-stbh.jpg"
+      - name: alt
+        type: string
+        example: "An image of a stormtrooper bobble head holding a blaster, on a black stand with text 'Stormtrooper' written on the front."
   sale-card:
     title: "Sale Card"
     description: |
@@ -39,6 +42,9 @@ patterns:
       - name: icon
         type: image
         example: "icons.svg#sale-icon"
+      - name: alt
+        type: string
+        example: "An image of a stormtrooper bobble head holding a blaster, on a black stand with text 'Stormtrooper' written on the front."
   new-card:
     title: "New Item Card"
     description: |
@@ -57,6 +63,9 @@ patterns:
       - name: icon
         type: image
         example: "icons.svg#new-icon"
+      - name: alt
+        type: string
+        example: "An image of a stormtrooper bobble head holding a blaster, on a black stand with text 'Stormtrooper' written on the front."
   icon-cards:
     title: "Icon Card"
     description: |

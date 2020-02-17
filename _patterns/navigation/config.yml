@@ -1,0 +1,20 @@
+title: "Navigation"
+description: |
+  These are all the types of navigations found on the site, including the main navigation, as well as the navigations that are not part of the header or footer.
+
+patterns:
+  main-nav:
+    title: "Main Navigation"
+    description: |
+
+  page-nav:
+    title: "Page Navigation"
+    description: |
+
+  product-filters:
+    title: "Product Filters"
+    description: |
+
+  social-nav:
+    title: "Social Media Navigation"
+    description: |

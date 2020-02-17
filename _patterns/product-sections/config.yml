@@ -1,0 +1,12 @@
+title: "Product Sections"
+description: |
+  The product sections are all the elements found on the product details pages. These elements should only be used on the product details pages. The information contained describes all the deatils about a product and should be used in conjunction with a photo array. The photo array should always placed on the left, while the product details on the right.
+
+patterns:
+  photo-array:
+    title: "Photo Array"
+    description: |
+
+  product-details:
+    title: "Product Details"
+    description: |
