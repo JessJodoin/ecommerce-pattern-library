@@ -1,0 +1,24 @@
+<div class="gutter-1-2 pad-t-1-2 pad-b-1-2">
+  <div class="grid grid-middle">
+    <div class="unit xs-2-5 s-2-5 m-2-5 l-2-5 island">
+      <a href="{{include.href}}" aria-label="{{include.aria-label}}">
+        <img class="img-flex" src="/images/{{include.image}}">
+      </a>
+    </div>
+
+    <div class="unit xs-2-5 s-2-5 m-2-5 l-2-5">
+      <h3 class="kilo push-1-4 prod-name">{{include.product-name}}</h3>
+      <p class="kilo push-1-2">&#36 {{include.price}}</p>
+      <p class="micro push-1-8 quant-item">Quantity: {{include.quantity}}</p>
+      <p class="micro push-0 quant-item">Item: {{include.item-num}}</p>
+    </div>
+
+    <div class="unit xs-1-5 s-1-5 m-1-5 l-1-5 trash-icon gutter">
+      <a href="{{include.remove}}" aria-label="{{include.remove-aria}}">
+        <i class="icon i-24">
+          <svg><use xlink:href="/images/{{include.icon}}" /></svg>
+        </i>
+      </a>
+    </div>
+  </div>
+</div>

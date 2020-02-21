@@ -1,0 +1,34 @@
+<div class="island order-summ">
+  <h3>Order Summary</h3>
+
+  <div>
+    <dl>
+      <dt>Subtotal</dt>
+      <dd>&#36 {{include.subtotal}}</dd>
+
+      <dt>Est. Shipping and Handling</dt>
+      <dd>&#36 {{include.snh}}</dd>
+
+      <dt>Est. Sales Tax</dt>
+      <dd>&#36 {{include.tax}}</dd>
+    </dl>
+  </div>
+
+  <hr class="order-hr">
+
+  <div class="push-2">
+    <dl>
+      <dt class="bold">Total</dt>
+      <dd class="bold">&#36 {{include.total}}</dd>
+    </dl>
+  </div>
+
+  <div class="push">
+    <p class="push-1-2 kilo order-info">Your credit card will not be charged until your order has shipped unless it is part of a subscription program.</p>
+    {% pattern form/required-checkbox label="Agree to Terms and Servies" id="tos" details="You must agree to the Terms and Services" error="tos-error" %}
+  </div>
+
+  <div class="submit-order push-0 center-content">
+    {% pattern buttons/submit title="Submit Order" %}
+  </div>
+</div>

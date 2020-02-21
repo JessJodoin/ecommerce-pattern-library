@@ -10,7 +10,7 @@ patterns:
   page-nav:
     title: "Page Navigation"
     description: |
-
+      This is the page navigation. This should be used on the main products pages and the category pages, or any page that showcases a list of individual products in cards. It should be located at the bottom right of the page above the footer.
     fields:
       - name: arrow-l
         type: image
@@ -26,7 +26,7 @@ patterns:
   social-nav:
     title: "Social Media Navigation"
     description: |
-
+      This is the social navigation buttons. These buttons link to external sites for the social media pages. It is used in the footer only.
     fields:
       - name: facebook
         type: image

@@ -21,7 +21,11 @@
   color: var(--color-primary-opposite);
 }
 
-.social-icons:hover,
+.social-icons:hover {
+  color: var(--color-accent);
+}
+
 .social-icons:focus {
+  outline: 3px solid var(--color-primary-opposite);
   color: var(--color-accent);
 }

@@ -46,6 +46,27 @@ patterns:
     title: "Item Summary"
     description: |
 
+    fields:
+      - name: image
+        type: image
+        example: "product-stbh.jpg"
+      - name: product-name
+        type: string
+        example: "Stormtrooper Bobble Head"
+      - name: price
+        type: value
+        example: "14.99"
+      - name: quantity
+        type: value
+        example: "1"
+      - name: item-num
+        type: string
+        example: "7429384601"
+      - name: icon
+        type: string
+        example: "icons.svg#trash-icon"
   order-summary:
     title: "Order Summary"
     description: |
+
+    width: 25em

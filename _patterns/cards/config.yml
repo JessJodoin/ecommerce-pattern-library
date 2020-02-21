@@ -14,7 +14,7 @@ patterns:
         example: "Stormtrooper Bobble Head"
       - name: term
         type: value
-        example: "$14.99"
+        example: "14.99"
       - name: image
         type: image
         example: "product-stbh.jpg"
@@ -32,10 +32,10 @@ patterns:
         example: "Stormtrooper Bobble Head"
       - name: term
         type: value
-        example: "$14.99"
+        example: "14.99"
       - name: price
         type: value
-        example: "$10.99"
+        example: "10.99"
       - name: image
         type: image
         example: "product-stbh.jpg"
@@ -56,7 +56,7 @@ patterns:
         example: "Stormtrooper Bobble Head"
       - name: term
         type: value
-        example: "$14.99"
+        example: "14.99"
       - name: image
         type: image
         example: "product-stbh.jpg"
