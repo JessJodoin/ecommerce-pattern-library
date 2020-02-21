@@ -17,20 +17,6 @@ patterns:
       - name: image
         type: image
         example: "product-stpf.jpg"
-  half-img-section:
-    title: "Half Image Section"
-    description: |
-      This is a half image section. It is used to promote sales and new items to the website, and should be used on the main page.
-    fields:
-      - name: title
-        type: string
-        example: "Select collectibles up to 50% off!"
-      - name: details
-        type: string
-        example: "Get them now, sale ends May 4th"
-      - name: image
-        type: image
-        example: "product-stpf.jpg"
   text-section:
     title: "Text Section"
     description: |
@@ -45,7 +31,7 @@ patterns:
   item-summary:
     title: "Item Summary"
     description: |
-
+      This is the item summary section. It contains all the information about the product being purchased. It should only be used on the checkout page, to the left of the order summary.
     fields:
       - name: image
         type: image
@@ -68,5 +54,18 @@ patterns:
   order-summary:
     title: "Order Summary"
     description: |
-
+      This is the order summary section. It contains all the information about the order being placed. It should only be used on the checkout page, to the right of the item summary.
     width: 25em
+    fields:
+      - name: subtotal
+        type: value
+        example: "14.99"
+      - name: snh
+        type: value
+        example: "5.99"
+      - name: tax
+        type: value
+        example: "2.25"
+      - name: total
+        type: value
+        example: "23.23"

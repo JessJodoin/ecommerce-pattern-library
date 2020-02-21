@@ -1,13 +1,17 @@
 .card {
   background-color: var(--color-primary-opposite);
   border-radius: 20px;
-  max-width: 60%;
 }
 
 .hover-box {
   text-decoration: none;
   border-radius: 20px;
   box-shadow: 2px 2px 6px var(--color-neutral-grey);
+}
+
+.hover-box-embed  {
+  border-radius: 20px 20px 0 0;
+  will-change: transform;
 }
 
 .hover-box-caption {
@@ -25,7 +29,11 @@
 }
 
 .hover-box-img {
+  transform: scale(1);
+  will-change: transform;
   transition: all .2s linear;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
 }
 
 .hover-box:hover .hover-box-img,

@@ -2,33 +2,38 @@
   <h3>Order Summary</h3>
 
   <div>
-    <dl>
-      <dt>Subtotal</dt>
-      <dd>&#36 {{include.subtotal}}</dd>
+    <dl class="grid">
+      <dt class="unit xs-4-5 s-4-5 m-4-5 l-4-5">Subtotal</dt>
+      <dd class="unit xs-1-5 s-1-5 m-1-5 l-1-5">&#36 {{include.subtotal}}</dd>
 
-      <dt>Est. Shipping and Handling</dt>
-      <dd>&#36 {{include.snh}}</dd>
+      <dt class="unit xs-4-5 s-4-5 m-4-5 l-4-5">Est. Shipping and Handling</dt>
+      <dd class="unit xs-1-5 s-1-5 m-1-5 l-1-5">&#36 {{include.snh}}</dd>
 
-      <dt>Est. Sales Tax</dt>
-      <dd>&#36 {{include.tax}}</dd>
+      <dt class="unit xs-4-5 s-4-5 m-4-5 l-4-5">Est. Sales Tax</dt>
+      <dd class="unit xs-1-5 s-1-5 m-1-5 l-1-5">&#36 {{include.tax}}</dd>
     </dl>
   </div>
 
   <hr class="order-hr">
 
-  <div class="push-2">
-    <dl>
-      <dt class="bold">Total</dt>
-      <dd class="bold">&#36 {{include.total}}</dd>
+  <div class="push">
+    <dl class="grid">
+      <dt class="unit xs-4-5 s-4-5 m-4-5 l-4-5 bold">Total</dt>
+      <dd class="unit xs-1-5 s-1-5 m-1-5 l-1-5 bold">&#36 {{include.total}}</dd>
     </dl>
   </div>
 
-  <div class="push">
+  <div class="push-0">
     <p class="push-1-2 kilo order-info">Your credit card will not be charged until your order has shipped unless it is part of a subscription program.</p>
-    {% pattern form/required-checkbox label="Agree to Terms and Servies" id="tos" details="You must agree to the Terms and Services" error="tos-error" %}
   </div>
 
-  <div class="submit-order push-0 center-content">
-    {% pattern buttons/submit title="Submit Order" %}
-  </div>
+  <fieldset class="push-0">
+    {% pattern form/required-checkbox label="Agree to Terms and Servies" id="tos" details="You must agree to the Terms and Services" error="tos-error" %}
+
+    <div class="submit-order push-0 center-content">
+      {% pattern buttons/submit title="Submit Order" %}
+    </div>
+  </fieldset>
 </div>
+
+<script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>

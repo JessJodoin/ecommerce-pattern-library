@@ -18,14 +18,11 @@
   color: var(--color-primary-opposite);
 }
 
-.img-banner {
-  max-height: 500px;
-  background-color: var(--color-primary);
+.hero-banner {
+  background: url("/images/stars-banner.jpg") center center / cover no-repeat var(--color-primary);
 }
 
 .hero-content {
   color: var(--color-primary-opposite);
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-  }
+  width: 100%;
+}

@@ -23,6 +23,10 @@ patterns:
     title: "Product Filters"
     description: |
 
+    fields:
+      - name: icon
+        type: image
+        example: "icons.svg#right-close-arrow"
   social-nav:
     title: "Social Media Navigation"
     description: |
