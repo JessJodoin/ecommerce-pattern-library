@@ -11,6 +11,14 @@ patterns:
     title: "Page Navigation"
     description: |
 
+    fields:
+      - name: arrow-l
+        type: image
+        example: "icons.svg#left-arrow"
+      - name: arrow-r
+        type: image
+        example: "icons.svg#right-close-arrow"
+
   product-filters:
     title: "Product Filters"
     description: |
@@ -18,3 +26,14 @@ patterns:
   social-nav:
     title: "Social Media Navigation"
     description: |
+
+    fields:
+      - name: facebook
+        type: image
+        example: "icons.svg#facebook"
+      - name: twitter
+        type: image
+        example: "icons.svg#twitter"
+      - name: pinterest
+        type: image
+        example: "icons.svg#pinterest"

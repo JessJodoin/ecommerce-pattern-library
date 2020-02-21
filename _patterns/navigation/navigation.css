@@ -1,0 +1,27 @@
+.page-nav {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.page-nav-current {
+  font-weight: bold;
+  color: var(--color-secondary);
+}
+
+.page-nav:hover,
+.page-nav:focus {
+  color: var(--color-accent);
+}
+
+.socials {
+  background-color: var(--color-primary);
+}
+
+.social-icons {
+  color: var(--color-primary-opposite);
+}
+
+.social-icons:hover,
+.social-icons:focus {
+  color: var(--color-accent);
+}

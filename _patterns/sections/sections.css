@@ -1,0 +1,46 @@
+.sec-cont {
+  max-width: 20em;
+}
+
+.half-cont {
+  max-width: 25em;
+}
+
+.text-sec {
+  max-width: 25em;
+}
+
+.text-bg {
+  width: 100%;
+  background-color: var(--color-primary);
+  color: var(--color-primary-opposite);
+}
+
+@media only screen and (min-width: 38em) {
+
+  .sec-cont {
+    max-width: 25em;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-primary-opposite);
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .sec-cont {
+    max-width: 26em;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .sec-cont {
+    max-width: 23em;
+  }
+
+}
