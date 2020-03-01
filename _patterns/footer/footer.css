@@ -1,0 +1,7 @@
+.footer {
+  background-color: var(--color-primary);
+}
+
+.copyright {
+  color: var(--color-primary-opposite);
+}

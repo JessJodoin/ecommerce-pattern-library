@@ -41,3 +41,7 @@ patterns:
       - name: pinterest
         type: image
         example: "icons.svg#pinterest"
+  footer-nav:
+    title: "Footer Navigation"
+    description: |
+      This is the footer navigation. It is to be used only in the footer across the website.

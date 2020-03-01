@@ -1,25 +1,25 @@
 <div class="island order-summ">
   <h3>Order Summary</h3>
 
-  <div>
+  <div class="milli">
     <dl class="grid">
-      <dt class="unit xs-4-5 s-4-5 m-4-5 l-4-5">Subtotal</dt>
-      <dd class="unit xs-1-5 s-1-5 m-1-5 l-1-5">&#36 {{include.subtotal}}</dd>
+      <dt class="unit xs-3-5 s-4-5 m-4-5 l-4-5">Subtotal</dt>
+      <dd class="unit xs-2-5 s-1-5 m-1-5 l-1-5">&#36 {{include.subtotal}}</dd>
 
-      <dt class="unit xs-4-5 s-4-5 m-4-5 l-4-5">Est. Shipping and Handling</dt>
-      <dd class="unit xs-1-5 s-1-5 m-1-5 l-1-5">&#36 {{include.snh}}</dd>
+      <dt class="unit xs-3-5 s-4-5 m-4-5 l-4-5 push">Est. Shipping and Handling</dt>
+      <dd class="unit xs-2-5 s-1-5 m-1-5 l-1-5">&#36 {{include.snh}}</dd>
 
-      <dt class="unit xs-4-5 s-4-5 m-4-5 l-4-5">Est. Sales Tax</dt>
-      <dd class="unit xs-1-5 s-1-5 m-1-5 l-1-5">&#36 {{include.tax}}</dd>
+      <dt class="unit xs-3-5 s-4-5 m-4-5 l-4-5">Est. Sales Tax</dt>
+      <dd class="unit xs-2-5 s-1-5 m-1-5 l-1-5">&#36 {{include.tax}}</dd>
     </dl>
   </div>
 
   <hr class="order-hr">
 
-  <div class="push">
+  <div class="push-1-2">
     <dl class="grid">
-      <dt class="unit xs-4-5 s-4-5 m-4-5 l-4-5 bold">Total</dt>
-      <dd class="unit xs-1-5 s-1-5 m-1-5 l-1-5 bold">&#36 {{include.total}}</dd>
+      <dt class="unit xs-3-5 s-4-5 m-4-5 l-4-5 bold">Total</dt>
+      <dd class="unit xs-2-5 s-1-5 m-1-5 l-1-5 bold">&#36 {{include.total}}</dd>
     </dl>
   </div>
 
@@ -30,7 +30,7 @@
   <fieldset class="push-0">
     {% pattern form/required-checkbox label="Agree to Terms and Servies" id="tos" details="You must agree to the Terms and Services" error="tos-error" %}
 
-    <div class="submit-order push-0 center-content">
+    <div class="submit-order push-0 pad-t-1-2 center-content">
       {% pattern buttons/submit title="Submit Order" %}
     </div>
   </fieldset>

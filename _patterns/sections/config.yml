@@ -69,3 +69,7 @@ patterns:
       - name: total
         type: value
         example: "23.23"
+  recommened-section:
+    title: "Recommened Products Section"
+    description: |
+      This is a recommened products section. It is used at the bottom of products pages to display similar recommened products.
