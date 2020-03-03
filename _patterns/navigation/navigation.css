@@ -1,35 +1,53 @@
+.navigation {
+  background-color: var(--color-primary);
+}
+
 .nav-label {
   cursor: pointer;
   display: block;
-  width: 100px;
-  height: 100px;
-  background-image: url("../images/icons.svg#toggle-nav") center top no-repeat;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+}
+
+.icon-open,
+.icon-close {
+  color: var(--color-primary-opposite);
+}
+
+.icon-open {
+  display: block;
+}
+
+.icon-close {
+  display: none;
 }
 
 .main-nav {
   list-style-type: none;
   display: none;
   position: absolute;
-  padding-top: 1em;
+  top: 64px;
+  left: 0;
+  padding: 1.3rem;
 }
 
 .main-nav > li {
   display: block;
-  margin-left: 1.95rem;
-  margin-right: 1.95rem;
-  margin-bottom: 1.95rem;
+  padding: 1.3rem;
 }
 
 .main-nav a {
+  color: var(--color-primary-opposite);
   text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main-nav a:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
 }
 
 .nav-check:checked ~ .main-nav {
   display: block;
+  background-color: var(--color-primary-light);
 }
 
 .nav-check:checked ~ .nav-label {
@@ -37,9 +55,17 @@
   background-color: var(--color-primary-light);
 }
 
-.nav-check {
+[type="checkbox"].nav-check + .nav-label::before {
   position: absolute;
   top: -3em;
+}
+
+.nav-check:checked ~ .nav-label .icon-open {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .icon-close {
+  display: block;
 }
 
 .page-nav {
@@ -129,7 +155,7 @@
     align-items: center;
     position: static;
     padding: 0;
-    transform: none
+    transform: none;
   }
 
   .main-nav > li {

@@ -1,12 +1,16 @@
-<nav class="relative" role="navigation" id="nav">
+<nav class="relative navigation" role="navigation" id="nav">
   <input class="nav-check" name="nav-check" id="nav-check" type="checkbox" aria-label="Click here to open the navigation." required>
   <label class="nav-label" for="nav-check">
-    <i class="icon">
-      <svg><use xlink:href="/images/icons.svg#toggle-nav" /></svg>
+    <i class="icon i-64 icon-open">
+      <svg><use xlink:href="/images/icons.svg#toggle-open" /></svg>
+    </i>
+
+    <i class="icon i-64 icon-close">
+      <svg><use xlink:href="/images/icons.svg#toggle-close" /></svg>
     </i>
   </label>
 
-  <ul class="main-nav kilo" id="menu">
+  <ul class="main-nav kilo bold push-0" id="menu">
     <li><a href="{{include.href}}">New Arrivals</a></li>
 
     <li><a href="{{include.href}}">Shop</a></li>
