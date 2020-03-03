@@ -1,3 +1,41 @@
+.nav-label {
+  cursor: pointer;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: url(../images/toggle-nav.svg) center top no-repeat;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+  position: relative;
+  padding-top: 1em
+}
+
+.main-nav > li {
+  display: block;
+  margin-left: 1.95rem;
+  margin-right: 1.95rem;
+  margin-bottom: 1.95rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+}
+
+.nav-check:checked ~ .main-nav {
+  display: block;
+}
+
+.nav-check:checked ~ .nav-label {
+  background-position: center bottom;
+}
+
 .page-nav {
   text-decoration: none;
   font-weight: bold;
@@ -73,6 +111,30 @@
   .main-foot-items{
     font-size: 1rem;
     line-height: 1.3rem;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: static;
+    padding: 0;
+    transform: none
+  }
+
+  .main-nav > li {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: .65rem;
+  }
+
+  input.nav-check,
+  label.nav-label {
+    display: none;
   }
 
 }
