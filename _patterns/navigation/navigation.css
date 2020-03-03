@@ -3,8 +3,8 @@
   display: block;
   width: 100px;
   height: 100px;
-  background: url(../images/icons.svg#toggle-nav) center top no-repeat;
-  position: relative;
+  background-image: url("../images/icons.svg#toggle-nav") center top no-repeat;
+  position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -13,8 +13,8 @@
 .main-nav {
   list-style-type: none;
   display: none;
-  position: relative;
-  padding-top: 1em
+  position: absolute;
+  padding-top: 1em;
 }
 
 .main-nav > li {
@@ -34,6 +34,12 @@
 
 .nav-check:checked ~ .nav-label {
   background-position: center bottom;
+  background-color: var(--color-primary-light);
+}
+
+.nav-check {
+  position: absolute;
+  top: -3em;
 }
 
 .page-nav {

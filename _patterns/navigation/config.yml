@@ -17,8 +17,7 @@ patterns:
         example: "icons.svg#left-arrow"
       - name: arrow-r
         type: image
-        example: "icons.svg#right-close-arrow"
-
+        example: "icons.svg#right-arrow"
   product-filters:
     title: "Product Filters"
     description: |
