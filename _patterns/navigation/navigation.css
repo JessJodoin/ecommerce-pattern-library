@@ -3,7 +3,7 @@
   display: block;
   width: 100px;
   height: 100px;
-  background: url(../images/toggle-nav.svg) center top no-repeat;
+  background: url(../images/icons.svg#toggle-nav) center top no-repeat;
   position: relative;
   top: 0;
   left: 50%;
