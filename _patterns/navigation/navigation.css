@@ -5,6 +5,7 @@
 .nav-label {
   cursor: pointer;
   display: block;
+  padding: .5rem;
 }
 
 .nav-label:hover {
@@ -33,7 +34,7 @@
   list-style-type: none;
   display: none;
   position: absolute;
-  top: 64px;
+  top: 75px;
   left: 0;
   padding: 0;
 }
@@ -74,7 +75,7 @@
 
 [type="checkbox"].nav-check + .nav-label::before {
   position: absolute;
-  top: -3em;
+  top: -10em;
 }
 
 .nav-check:checked ~ .nav-label .icon-open {
@@ -96,6 +97,23 @@
 .cart-icon {
   color: var(--color-primary-opposite);
   text-decoration: none;
+}
+
+.cart-mover {
+  transition: all .2s ease-in-out;
+}
+
+.cart-icon:focus {
+  color: var(--color-accent);
+  outline: 3px solid var(--color-primary-opposite);
+}
+
+.cart-icon:hover .cart-mover {
+  transform: rotate(-15deg);
+}
+
+.cart-icon:focus .cart-mover {
+  transform: rotate(-15deg);
 }
 
 .page-nav {

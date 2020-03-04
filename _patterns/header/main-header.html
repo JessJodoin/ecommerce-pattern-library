@@ -1,3 +1,19 @@
-<div>
+<div class="masthead pad-t-1-4 pad-b-1-2">
+  <div class="grid">
+    <div class="unit xs-1 s-1 unit-offset-m-1-2 m-1-2 unit-offset-l-2-3 l-1-3 tool-bar-nav pad-b-1-2 gutter-1-4">
+      {% pattern navigation/tool-bar number="2" %}
+    </div>
+  </div>
 
+  <div class="grid grid-middle gutter-1-2">
+    <div class="unit xs-1-4 s-1-4 m-3-4 unit-push-m-1-4 l-4-5">
+      {% pattern navigation/main-nav %}
+    </div>
+
+    <div class="unit xs-3-4 s-3-4 m-1-4 unit-pull-m-3-4 l-1-5">
+      <a class="logo-link" href="{{include.href}}" tabindex="0">
+        <img class="img-flex logo-white" src="/images/logo-white.svg" alt="Pew Pew Logo" aria-label="Pew Pew Logo">
+      </a>
+    </div>
+  </div>
 </div>

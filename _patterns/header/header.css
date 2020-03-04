@@ -1,0 +1,23 @@
+.masthead {
+  background-color: var(--color-primary);
+}
+
+.logo-white {
+  width: 156px;
+}
+
+.logo-link:focus {
+  outline: 3px solid var(--color-primary-opposite);
+}
+
+.tool-bar-nav {
+  max-width: 400px;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .logo-white {
+    width: 100px;
+  }
+
+}
