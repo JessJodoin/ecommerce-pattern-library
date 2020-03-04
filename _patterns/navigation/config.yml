@@ -6,7 +6,23 @@ patterns:
   main-nav:
     title: "Main Navigation"
     description: |
-
+      This is the main navigation of the website. It should be used on a black background in the header, across the entire site.
+  tool-bar:
+    title: "Tool Bar Navigation"
+    description: |
+      This is the tool bar. It is located at the top of the header on every page.
+    fields:
+      - name: number
+        type: number
+        example: "2"
+  product-filters:
+    title: "Product Filters"
+    description: |
+      This is the product filters. It should not be used on the main website page or the checkout pages, and should only be used on pages that showcase the various products available for sale.
+    fields:
+      - name: icon
+        type: image
+        example: "icons.svg#right-arrow"
   page-nav:
     title: "Page Navigation"
     description: |
@@ -18,14 +34,6 @@ patterns:
       - name: arrow-r
         type: image
         example: "icons.svg#right-arrow"
-  product-filters:
-    title: "Product Filters"
-    description: |
-
-    fields:
-      - name: icon
-        type: image
-        example: "icons.svg#right-close-arrow"
   social-nav:
     title: "Social Media Navigation"
     description: |
@@ -43,4 +51,4 @@ patterns:
   footer-nav:
     title: "Footer Navigation"
     description: |
-      This is the footer navigation. It is to be used only in the footer across the website.
+      This is the footer navigation. It is to be used in the footer only, across the website.

@@ -7,6 +7,15 @@
   display: block;
 }
 
+.nav-label:hover {
+  background-color: var(--color-primary-light);
+}
+
+.nav-label:focus {
+  background-color: var(--color-primary-light);
+  outline: 3px solid var(--color-primary-opposite);
+}
+
 .icon-open,
 .icon-close {
   color: var(--color-primary-opposite);
@@ -26,12 +35,12 @@
   position: absolute;
   top: 64px;
   left: 0;
-  padding: 1.3rem;
+  padding: 0;
 }
 
 .main-nav > li {
   display: block;
-  padding: 1.3rem;
+  padding: 1.3rem 1.95rem;
 }
 
 .main-nav a {
@@ -40,9 +49,17 @@
   text-transform: uppercase;
 }
 
-.main-nav a:hover {
+.main-nav a:hover,
+.main-nav li:hover {
+  background-color: var(--color-accent);
+  color: var(--color-primary-opposite);
+}
+
+.main-nav a:focus,
+.main-nav li:focus {
   color: var(--color-accent);
   text-decoration: underline;
+  outline: 3px solid var(--color-primary-opposite);
 }
 
 .nav-check:checked ~ .main-nav {
@@ -66,6 +83,19 @@
 
 .nav-check:checked ~ .nav-label .icon-close {
   display: block;
+}
+
+.tool-bar {
+  background-color: var(--color-primary);
+}
+
+.in-cart {
+  padding-left: 1.3rem;
+}
+
+.cart-icon {
+  color: var(--color-primary-opposite);
+  text-decoration: none;
 }
 
 .page-nav {
@@ -151,6 +181,44 @@
 
   .main-nav {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    position: static;
+    padding: 0;
+    transform: none;
+  }
+
+  .main-nav > li {
+    width: 25%;
+    padding: 0;
+    margin: .65rem 0;
+  }
+
+  input.nav-check,
+  label.nav-label {
+    display: none;
+  }
+
+  .main-nav a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-accent);
+    text-decoration: underline;
+  }
+
+  .main-nav li:hover {
+    background-color: var(--color-primary);
+    color: var(--color-primary-opposite);
+  }
+
+}
+
+@media only screen and  (min-width: 60em) {
+
+  .main-nav {
+    display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     position: static;
@@ -159,19 +227,10 @@
   }
 
   .main-nav > li {
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: .65rem;
+    width: 15%;
+    padding: 0;
+    margin: .65rem 0;
   }
-
-  input.nav-check,
-  label.nav-label {
-    display: none;
-  }
-
-}
-
-@media only screen and  (min-width: 60em) {
 
   .foot-li {
     margin-bottom: .9rem;

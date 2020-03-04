@@ -93,8 +93,12 @@ fieldset {
   color: var(--color-primary-light);
 }
 
-.search-icon {
+.search-label {
   color: var(--color-primary-light);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 }
 
 #search-input {
@@ -109,4 +113,12 @@ fieldset {
 
 [placeholder] {
   color: var(--color-neutral-grey);
+}
+
+@media only screen and (min-width: 38em) {
+
+  .search-icon {
+    vertical-align: -10%;
+  }
+
 }
