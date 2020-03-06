@@ -13,6 +13,9 @@ patterns:
       - name: title
         type: string
         example: "Add To Cart"
+      - name: url
+        type: string
+        example: "/products.html"
   icon-button-basic:
     title: "Basic Icon"
     description: |
@@ -25,6 +28,9 @@ patterns:
       - name: image
         type: image
         example: "icons.svg#cart-icon"
+      - name: url
+        type: string
+        example: "/products.html"
   ghost:
     title: "Ghost"
     description: |
@@ -34,6 +40,9 @@ patterns:
       - name: title
         type: string
         example: "Add To Cart"
+      - name: url
+        type: string
+        example: "/products.html"
   icon-button-ghost:
     title: "Ghost Icon"
     description: |
@@ -46,6 +55,9 @@ patterns:
       - name: image
         type: image
         example: "icons.svg#cart-icon"
+      - name: url
+        type: string
+        example: "/products.html"
   light:
     title: "Light"
     description: |
@@ -55,6 +67,9 @@ patterns:
       - name: title
         type: string
         example: "Shop New Arrivals"
+      - name: url
+        type: string
+        example: "/new-arrivals.html"
   icon-button-light:
     title: "Light Icon"
     description: |
@@ -67,6 +82,9 @@ patterns:
       - name: image
         type: image
         example: "icons.svg#cart-icon"
+      - name: url
+        type: string
+        example: "/new-arrivals.html"
   submit:
     title: "Submit Button"
     description: |
@@ -88,3 +106,6 @@ patterns:
       - name: image
         type: image
         example: "icons.svg#cart-icon"
+      - name: url
+        type: string
+        example: "/products.html"

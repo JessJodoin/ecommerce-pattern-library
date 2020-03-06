@@ -52,3 +52,10 @@ patterns:
     title: "Footer Navigation"
     description: |
       This is the footer navigation. It is to be used in the footer only, across the website.
+    fields:
+      - name: "href-new"
+        type: string
+        example: "/new-arrivals.html"
+      - name: "href-shop"
+        type: string
+        example: "/new-arrivals.html"

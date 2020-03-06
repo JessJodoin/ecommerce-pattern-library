@@ -1,0 +1,6 @@
+- name: "New Arrivals"
+- name: "Mens"
+  items:
+    - "All"
+    - "Shirts"
+    - "Hoodies"

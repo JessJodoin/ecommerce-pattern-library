@@ -12,8 +12,7 @@
   background-color: var(--color-primary-light);
 }
 
-.nav-label:focus {
-  background-color: var(--color-primary-light);
+.nav-check:focus + .nav-label {
   outline: 3px solid var(--color-primary-opposite);
 }
 
@@ -37,6 +36,7 @@
   top: 75px;
   left: 0;
   padding: 0;
+  width: 14em;
 }
 
 .main-nav > li {
@@ -91,7 +91,7 @@
 }
 
 .in-cart {
-  padding-left: 1.3rem;
+  padding-left: 1rem;
 }
 
 .cart-icon {
@@ -206,6 +206,7 @@
     position: static;
     padding: 0;
     transform: none;
+    width: 100%;
   }
 
   .main-nav > li {

@@ -1,107 +1,16 @@
 <nav class="relative side-nav">
-  <input class="side-check" name="side-check" id="side-check" type="checkbox" aria-label="Click here to open the filters." required>
-  <label class="side-label" for="side-check">Filters
-    <i class="icon i-24 side-open">
-      <svg><use xlink:href="/images/icons.svg#right-arrow" /></svg>
-    </i>
+  <button>Filters</button>
 
-    <i class="icon i-24 side-close">
-      <svg><use xlink:href="/images/icons.svg#close-arrow" /></svg>
-    </i>
-  </label>
-
-  <ul class="list-group island main-side">
-    <li><a href="{{include.href}}">New Arrivals</a></li>
-
-    <li>
-      <input class="mens-check" name="mens-check" id="mens-check" type="checkbox" aria-label="Click here to open the mens' filters." required>
-      <label class="mens-label" for="mens-check">
-        <a href="{{include.href}}">Mens</a>
-        <i class="icon i-24 side-open">
-          <svg><use xlink:href="/images/icons.svg#right-arrow" /></svg>
-        </i>
-
-        <i class="icon i-24 side-close">
-          <svg><use xlink:href="/images/icons.svg#close-arrow" /></svg>
-        </i>
-      </label>
-
-      <ul class="list-group fil-side">
-        <li><a href="{{include.href}}">All</a></li>
-        <li><a href="{{include.href}}">Shirts</a></li>
-        <li><a href="{{include.href}}">Hoodies</a></li>
-        <li><a href="{{include.href}}">Pants</a></li>
-        <li><a href="{{include.href}}">Accessories</a></li>
-      </ul>
-    </li>
-
-    <li>
-      <input class="wo-check" name="wo-check" id="wo-check" type="checkbox" aria-label="Click here to open the womens' filters." required>
-      <label class="wo-label" for="wo-check">
-        <a href="{{include.href}}">Womens</a>
-        <i class="icon i-24 side-open">
-          <svg><use xlink:href="/images/icons.svg#right-arrow" /></svg>
-        </i>
-
-        <i class="icon i-24 side-close">
-          <svg><use xlink:href="/images/icons.svg#close-arrow" /></svg>
-        </i>
-      </label>
-
-      <ul class="list-group fil-side">
-        <li><a href="{{include.href}}">All</a></li>
-        <li><a href="{{include.href}}">Shirts</a></li>
-        <li><a href="{{include.href}}">Hoodies</a></li>
-        <li><a href="{{include.href}}">Pants</a></li>
-        <li><a href="{{include.href}}">Accessories</a></li>
-      </ul>
-    </li>
-
-    <li>
-      <input class="k-check" name="k-check" id="k-check" type="checkbox" aria-label="Click here to open the kids' filters." required>
-      <label class="k-label" for="k-check">
-        <a href="{{include.href}}">Kids</a>
-        <i class="icon i-24 side-open">
-          <svg><use xlink:href="/images/icons.svg#right-arrow" /></svg>
-        </i>
-
-        <i class="icon i-24 side-close">
-          <svg><use xlink:href="/images/icons.svg#close-arrow" /></svg>
-        </i>
-      </label>
-
-      <ul class="list-group fil-side">
-        <li><a href="{{include.href}}">All</a></li>
-        <li><a href="{{include.href}}">Shirts</a></li>
-        <li><a href="{{include.href}}">Hoodies</a></li>
-        <li><a href="{{include.href}}">Pants</a></li>
-        <li><a href="{{include.href}}">Accessories</a></li>
-      </ul>
-    </li>
-
-    <li><a href="{{include.href}}">Collectables</a></li>
-
-    <li>
-      <input class="sale-check" name="sale-check" id="sale-check" type="checkbox" aria-label="Click here to open the sale's filters." required>
-      <label class="sale-label" for="sale-check">
-        <a href="{{include.href}}">Sale</a>
-        <i class="icon i-24 side-open">
-          <svg><use xlink:href="/images/icons.svg#right-arrow" /></svg>
-        </i>
-
-        <i class="icon i-24 side-close">
-          <svg><use xlink:href="/images/icons.svg#close-arrow" /></svg>
-        </i>
-      </label>
-
-      <ul class="list-group fil-side">
-        <li><a href="{{include.href}}">All</a></li>
-        <li><a href="{{include.href}}">Shirts</a></li>
-        <li><a href="{{include.href}}">Hoodies</a></li>
-        <li><a href="{{include.href}}">Pants</a></li>
-        <li><a href="{{include.href}}">Accessories</a></li>
-        <li><a href="{{include.href}}">Collectables</a></li>
-      </ul>
-    </li>
-  </ul>
+  <div>
+    {% for menu in site.data.filters %}
+      <button>{{menu.name}}</button>
+      {% if menu.items %}
+        <ul>
+          {% for item in menu.items %}
+          <li><a href="#">{{item}}</a></li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endfor %}
+  </div>
 </nav>

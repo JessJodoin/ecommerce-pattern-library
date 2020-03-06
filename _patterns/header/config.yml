@@ -1,3 +1,10 @@
 title: "Header"
 description: |
   This is the header. It is to be used across the entire site.
+
+patterns:
+  main-header:
+    fields:
+      - name: "href"
+        type: string
+        example: "/index.html"

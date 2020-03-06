@@ -21,6 +21,9 @@ patterns:
       - name: alt
         type: string
         example: "An image of a stormtrooper bobble head holding a blaster, on a black stand with text 'Stormtrooper' written on the front."
+      - name: url
+        type: string
+        example: "/products-1.html"
   sale-card:
     title: "Sale Card"
     description: |
@@ -45,6 +48,9 @@ patterns:
       - name: alt
         type: string
         example: "An image of a stormtrooper bobble head holding a blaster, on a black stand with text 'Stormtrooper' written on the front."
+      - name: url
+        type: string
+        example: "/products-1.html"
   new-card:
     title: "New Item Card"
     description: |
@@ -66,6 +72,9 @@ patterns:
       - name: alt
         type: string
         example: "An image of a stormtrooper bobble head holding a blaster, on a black stand with text 'Stormtrooper' written on the front."
+      - name: url
+        type: string
+        example: "/products-1.html"
   icon-cards:
     title: "Icon Card"
     description: |
@@ -93,3 +102,6 @@ patterns:
       - name: image
         type: image
         example: "product-stpf.jpg"
+      - name: url
+        type: string
+        example: "/products-1.html"
