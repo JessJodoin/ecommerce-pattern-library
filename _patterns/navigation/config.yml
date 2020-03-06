@@ -55,7 +55,34 @@ patterns:
     fields:
       - name: "href-new"
         type: string
-        example: "/new-arrivals.html"
+        example: "/products-new-arrivals.html"
       - name: "href-shop"
         type: string
-        example: "/new-arrivals.html"
+        example: "/products.html"
+      - name: "href-sale"
+        type: string
+        example: "/product-sale.html"
+      - name: "href-collect"
+        type: string
+        example: "/products-collectibels.html"
+      - name: "href-men"
+        type: string
+        example: "/products-mens.html"
+      - name: "href-wo"
+        type: string
+        example: "/product-womens.html"
+      - name: "href-kids"
+        type: string
+        example: "/products-kids.html"
+      - name: "href-shirt"
+        type: string
+        example: "/products-collectibels.html"
+      - name: "href-pants"
+        type: string
+        example: "/products-mens.html"
+      - name: "href-hood"
+        type: string
+        example: "/product-womens.html"
+      - name: "href-acc"
+        type: string
+        example: "/products-kids.html"

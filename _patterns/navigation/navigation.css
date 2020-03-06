@@ -148,14 +148,68 @@
   color: var(--color-secondary);
 }
 
+.side-nav {
+  background-color: var(--color-primary);
+}
+
+#filters,
+.filter-btn {
+  text-transform: uppercase;
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+#filters:hover,
+.filter-btn:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+#filters:focus,
+.filter-btn:focus {
+  color: var(--color-accent);
+  text-decoration: underline;
+  outline: 3px solid var(--color-primary-opposite);
+}
+
+.filter-links {
+  background-color: var(--color-primary-light);
+}
+
+.filter-li:hover {
+  background-color: var(--color-accent);
+  color: var(--color-primary-opposite);
+  text-decoration: none;
+}
+
+.filter-a {
+  color: var(--color-primary-opposite);
+  text-decoration: none;
+}
+
+.filter-li:hover .filter-a {
+  background-color: var(--color-accent);
+  color: var(--color-primary-opposite);
+  text-decoration: none;
+}
+
+.filter-a:focus {
+  background-color: var(--color-accent);
+  color: var(--color-primary-opposite);
+  text-decoration: none;
+  outline: 3px solid var(--color-primary-opposite);
+}
+
+.filter-btn-active {
+  color: var(--color-primary-opposite);
+}
+
 .footer-nav {
   background-color: var(--color-primary);
 }
 
 .main-foot-items {
   text-transform: uppercase;
-  font-size: .8784rem;
-  line-height: 1.3rem;
 }
 
 .foot-items {

@@ -1,16 +1,31 @@
-<nav class="relative side-nav">
-  <button>Filters</button>
+<nav class="side-nav bold">
+  <button class="exa island" id="filters">Filters</button>
+  <i class="icon i-24 filter-btn-active">
+    <svg><use xlink:href="/images/icons.svg#right-arrow" /></svg>
+  </i>
+  <i class="icon i-24">
+    <svg><use xlink:href="/images/icons.svg#close-arrow" /></svg>
+  </i>
 
-  <div>
+  <div id="filter-buttons" hidden>
     {% for menu in site.data.filters %}
-      <button>{{menu.name}}</button>
-      {% if menu.items %}
-        <ul>
-          {% for item in menu.items %}
-          <li><a href="#">{{item}}</a></li>
-          {% endfor %}
-        </ul>
-      {% endif %}
+      <div>
+        <button class="filter-btn island">{{menu.name}}</button>
+        <i class="icon i-24 filter-btn-active">
+          <svg><use xlink:href="/images/icons.svg#right-arrow" /></svg>
+        </i>
+        <i class="icon i-24">
+          <svg><use xlink:href="/images/icons.svg#close-arrow" /></svg>
+        </i>
+
+        {% if menu.items %}
+          <ul class="filter-links list-group" hidden>
+            {% for item in menu.items %}
+            <li class="island filter-li"><a class="filter-a" href="#">{{item}}</a></li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
     {% endfor %}
   </div>
 </nav>

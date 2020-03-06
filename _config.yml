@@ -27,3 +27,6 @@ patternbot:
       The colours, alert, alert-light, and alert-dark, are used only in the error message and should not be used anywhere else.
     colors.neutral: |
       The neutral colours should be used to accent cards and other elements.
+  layouts:
+    default: |
+      The default layout should be used for alomst every page, it includes the website’s main header and footer.
