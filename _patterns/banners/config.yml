@@ -22,6 +22,14 @@ patterns:
       - name: details
         type: string
         example: "Come raid our new stock."
+      - name: button_title
+        type: string
+        example: "Buy Now"
+        required: false
+      - name: button_url
+        type: url
+        example: "/products/"
+        required: false
   promotional-banner:
     title: "Promotional Banner"
     description: |
@@ -34,5 +42,5 @@ patterns:
         type: string
         example: "Get some now, offer lasts until May 4th."
       - name: href
-        type: string
-        example: "/products.html/"
+        type: url
+        example: "/products/"

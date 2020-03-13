@@ -6,9 +6,11 @@
         <p class="mega push-0 pad-b-1-4">{{include.details}}</p>
       </div>
 
-      <div class="pad-t push">
-        {% pattern buttons/animated-icon title="Buy Now" image="icons.svg#cart-icon" url="/products.html" %}
-      </div>
+      {% if include.button_url %}
+        <div class="pad-t push">
+          {% pattern buttons/animated-icon title=include.button_title image="icons.svg#cart-icon" url=include.button_url %}
+        </div>
+      {% endif %}
     </div>
   </div>
 </section>

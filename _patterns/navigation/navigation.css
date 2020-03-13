@@ -2,6 +2,10 @@
   background-color: var(--color-primary);
 }
 
+.current {
+  color: var(--color-secondary);
+}
+
 .nav-label {
   cursor: pointer;
   display: block;
@@ -160,16 +164,30 @@
 }
 
 #filters:hover,
-.filter-btn:hover {
+.filter-btn:hover,
+#filters:hover .filter-btn-active {
   color: var(--color-accent);
   text-decoration: underline;
 }
 
 #filters:focus,
-.filter-btn:focus {
+.filter-btn:focus,
+#filters:focus .filter-btn-active {
   color: var(--color-accent);
   text-decoration: underline;
   outline: 3px solid var(--color-primary-opposite);
+}
+
+.filter-btn-close {
+  display: none;
+}
+
+.filter-btn-active .filter-btn-close {
+  display: inline-block;
+}
+
+.filter-btn-active .filter-btn-open {
+  display: none;
 }
 
 .filter-links {
@@ -234,10 +252,6 @@
 
 .foot-list-items {
   display: none;
-}
-
-.current-foot {
-  color: var(--color-secondary);
 }
 
 @media only screen and (min-width: 25em) {

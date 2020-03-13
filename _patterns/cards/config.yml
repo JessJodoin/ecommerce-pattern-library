@@ -22,7 +22,7 @@ patterns:
         type: string
         example: "An image of a stormtrooper bobble head holding a blaster, on a black stand with text 'Stormtrooper' written on the front."
       - name: url
-        type: string
+        type: url
         example: "/products-1.html"
   sale-card:
     title: "Sale Card"
@@ -49,7 +49,7 @@ patterns:
         type: string
         example: "An image of a stormtrooper bobble head holding a blaster, on a black stand with text 'Stormtrooper' written on the front."
       - name: url
-        type: string
+        type: url
         example: "/products-1.html"
   new-card:
     title: "New Item Card"
@@ -73,7 +73,7 @@ patterns:
         type: string
         example: "An image of a stormtrooper bobble head holding a blaster, on a black stand with text 'Stormtrooper' written on the front."
       - name: url
-        type: string
+        type: url
         example: "/products-1.html"
   icon-cards:
     title: "Icon Card"
@@ -103,5 +103,5 @@ patterns:
         type: image
         example: "product-stpf.jpg"
       - name: url
-        type: string
+        type: url
         example: "/products-1.html"

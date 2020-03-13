@@ -11,18 +11,18 @@
   </label>
 
   <ul class="main-nav milli bold push-0 zindex-1000" id="menu">
-    <li><a href="{{include.href-new}}">New Arrivals</a></li>
+    <li {% if page.highlight_nav == 'new-arrivals' %}current{% endif %}><a href="/new-arrivals/">New Arrivals</a></li>
 
-    <li><a href="{{include.href-prod}}">Shop</a></li>
+    <li {% if page.highlight_nav == 'shop' %}current{% endif %}><a href="/products">Shop</a></li>
 
-    <li><a href="{{include.href-mens}}">Mens</a></li>
+    <li {% if page.highlight_nav == 'mens' %}current{% endif %}><a href="/mens/">Mens</a></li>
 
-    <li><a href="{{include.href-wo}}">Womens</a></li>
+    <li {% if page.highlight_nav == 'womens' %}current{% endif %}><a href="/womens/">Womens</a></li>
 
-    <li><a href="{{include.href-kids}}">Kids</a></li>
+    <li {% if page.highlight_nav == 'kids' %}current{% endif %}><a href="/kids/">Kids</a></li>
 
-    <li><a href="{{include.href-collect}}">Collectables</a></li>
+    <li {% if page.highlight_nav == 'collectables' %}current{% endif %}><a href="/collectables/">Collectables</a></li>
 
-    <li><a href="{{include.href-sale}}">Sale</a></li>
+    <li {% if page.highlight_nav == 'sale' %}current{% endif %}><a href="/sale/">Sale</a></li>
   </ul>
 </nav>

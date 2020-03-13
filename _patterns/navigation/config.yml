@@ -7,28 +7,6 @@ patterns:
     title: "Main Navigation"
     description: |
       This is the main navigation of the website. It should be used on a black background in the header, across the entire site.
-    fields:
-      - name: href-new
-        type: string
-        example: "/new-arrivals.html"
-      - name: href-prod
-        type: string
-        example: "/products.html"
-      - name: href-mens
-        type: string
-        example: "/mens.html"
-      - name: href-wo
-        type: string
-        example: "/womens.html"
-      - name: href-kids
-        type: string
-        example: "/kids.html"
-      - name: href-collect
-        type: string
-        example: "/collectables.html"
-      - name: href-sale
-        type: string
-        example: "/sales.html"
   tool-bar:
     title: "Tool Bar Navigation"
     description: |
@@ -74,61 +52,3 @@ patterns:
     title: "Footer Navigation"
     description: |
       This is the footer navigation. It is to be used in the footer only, across the website.
-    fields:
-      - name: "href-new"
-        type: string
-        example: "/new-arrivals.html"
-      - name: "href-shop"
-        type: string
-        example: "/products.html"
-      - name: "href-sale"
-        type: string
-        example: "/sale.html"
-      - name: "href-collect"
-        type: string
-        example: "/collectibels.html"
-      - name: "href-men"
-        type: string
-        example: "/mens.html"
-      - name: "href-mshirt"
-        type: string
-        example: "/mens-shirts.html"
-      - name: "href-mhood"
-        type: string
-        example: "/mens-hoodies.html"
-      - name: "href-mpants"
-        type: string
-        example: "/mens-pants.html"
-      - name: "href-macc"
-        type: string
-        example: "/mens-accessories.html"
-      - name: "href-wo"
-        type: string
-        example: "/womens.html"
-      - name: "href-wshirt"
-        type: string
-        example: "/womens-shirts.html"
-      - name: "href-whood"
-        type: string
-        example: "/womens-hoodies.html"
-      - name: "href-wpants"
-        type: string
-        example: "/womens-pants.html"
-      - name: "href-wacc"
-        type: string
-        example: "/womens-accessories.html"
-      - name: "href-kids"
-        type: string
-        example: "/kids.html"
-      - name: "href-kshirt"
-        type: string
-        example: "/kids-shirts.html"
-      - name: "href-khood"
-        type: string
-        example: "/kids-hoodies.html"
-      - name: "href-kpants"
-        type: string
-        example: "/kids-pants.html"
-      - name: "href-kacc"
-        type: string
-        example: "/kids-accessories.html"
