@@ -10,3 +10,20 @@ patterns:
   product-details:
     title: "Product Details"
     description: |
+      This is the product description section.
+    fields:
+      - name: prod-name
+        type: string
+        example: "Stormtrooper Bobble Head"
+      - name: prod-price
+        type: value
+        example: "14.99"
+      - name: prod-desc
+        type: string
+        example: ""
+      - name: prod-deets
+        type: string
+        example: "50% cotton / 50% polyester"
+      - name: prod-ship
+        type: string
+        example: "Please allow 2-3 weeks for delivery."

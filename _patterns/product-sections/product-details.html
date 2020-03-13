@@ -1,0 +1,36 @@
+<div class="gutter pad-t">
+  <div class="gutter-1-2 push-1-2">
+    <h2 class="push-1-4">{{include.prod-name}}</h2>
+    <p>&#36; {{include.prod-price}}</p>
+  </div>
+
+  <div class="grid grid-middle pad-b">
+    <div class="unit xs-1 s-1-2 m-1-2 l-1-2 gutter">
+      {% pattern form/select-size id="size" label="Size" details="You must select a size" error="size-error" %}
+    </div>
+
+    <div class="unit xs-1 s-1-2 m-1-2 l-1-2 gutter">
+      {% pattern form/select-quantity id="quant" title="Quantity" type="number" details="Please select a quantity" error="quant-error" %}
+    </div>
+  </div>
+
+  <div class="center-content push-2">
+    {% pattern buttons/basic title="Add To Cart" url="/products.html" %}
+  </div>
+
+  <div class="gutter-1-2">
+    <p>{{include.prod-desc}}</p>
+
+    <div class="push-2">
+      <h3 class="push-1-2">Product Details</h3>
+      <ul class="gutter">
+        <li>{{include.prod-deets}}</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="push-1-2">Shipping Details</h3>
+      <p>{{include.prod-ship}}</p>
+    </div>
+  </div>
+</div>
