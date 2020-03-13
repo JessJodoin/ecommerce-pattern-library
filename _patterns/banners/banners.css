@@ -6,6 +6,7 @@
 .promotional {
   background-color: var(--color-accent);
   color: var(--color-primary-opposite);
+  text-decoration: none;
 }
 
 .promotional:hover {

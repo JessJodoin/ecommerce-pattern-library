@@ -22,9 +22,6 @@ patterns:
       - name: details
         type: string
         example: "Come raid our new stock."
-      - name: image
-        type: image
-        example: "stars-banner.jpg"
   promotional-banner:
     title: "Promotional Banner"
     description: |
@@ -36,3 +33,6 @@ patterns:
       - name: details
         type: string
         example: "Get some now, offer lasts until May 4th."
+      - name: href
+        type: string
+        example: "/products.html/"

@@ -116,7 +116,7 @@
   transform: rotate(-15deg);
 }
 
-.page-nav {
+.page-nav-item {
   text-decoration: none;
   font-weight: bold;
 }
@@ -126,8 +126,8 @@
   color: var(--color-secondary);
 }
 
-.page-nav:hover,
-.page-nav:focus {
+.page-nav-item:hover,
+.page-nav-item:focus {
   color: var(--color-accent);
 }
 
@@ -140,7 +140,7 @@
 }
 
 .social-icons:hover {
-  color: var(--color-secondary);
+  color: var(--color-accent);
 }
 
 .social-icons:focus {
