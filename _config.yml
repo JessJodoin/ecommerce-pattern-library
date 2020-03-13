@@ -30,3 +30,6 @@ patternbot:
   layouts:
     default: |
       The default layout should be used for alomst every page, it includes the website’s main header and footer.
+  collections:
+    products:
+      output: true
