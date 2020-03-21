@@ -20,10 +20,23 @@
 }
 
 .hero-banner {
-  background: url("/images/stars-banner.jpg") center center / cover no-repeat var(--color-primary);
+  background: url("/images/call-to-action-banner.jpg") center center / cover no-repeat var(--color-primary);
 }
 
 .hero-content {
   color: var(--color-primary-opposite);
   width: 100%;
+}
+
+.checkout-banner {
+  color: var(--color-primary);
+  background-color: var(--color-neutral-light-grey);
+}
+
+.checkout-h2 {
+  text-transform: capitalize;
+}
+
+.checkout-num {
+  color: var(--color-accent);
 }

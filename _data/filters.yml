@@ -21,6 +21,10 @@
     - "Pants"
     - "Accessories"
 - name: "Collectibles"
+  items:
+    - "All"
+    - "Mugs"
+    - "Stickers"
 - name: "Sale"
   items:
     - "All"
@@ -28,3 +32,5 @@
     - "Hoodies"
     - "Pants"
     - "Accessories"
+    - "Mugs"
+    - "Stickers"
