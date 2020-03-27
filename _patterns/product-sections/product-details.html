@@ -5,11 +5,11 @@
   </div>
 
   <div class="grid grid-middle pad-b">
-    <div class="unit xs-1 s-1-2 m-1-2 l-1-2 gutter">
+    <div class="unit xs-1 s-1-2 m-1-2 l-1-2">
       {% pattern form/select-size id="size" label="Size" details="You must select a size" error="size-error" %}
     </div>
 
-    <div class="unit xs-1 s-1-2 m-1-2 l-1-2 gutter">
+    <div class="unit xs-1 s-1-2 m-1-2 l-1-2">
       {% pattern form/select-quantity id="quant" title="Quantity" type="number" details="Please select a quantity" error="quant-error" %}
     </div>
   </div>
@@ -19,12 +19,13 @@
   </div>
 
   <div class="gutter-1-2">
-    <p>{{include.prod-desc}}</p>
+    <p class="push-2">{{include.prod-desc}}</p>
 
     <div class="push-2">
       <h3 class="push-1-2">Product Details</h3>
       <ul class="gutter">
-        <li>{{include.prod-deets}}</li>
+        <li>{{include.prod-deets1}}</li>
+        <li>{{include.prod-deets2}}</li>
       </ul>
     </div>
 

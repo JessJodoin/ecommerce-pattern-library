@@ -14,16 +14,19 @@ patterns:
     fields:
       - name: prod-name
         type: string
-        example: "Stormtrooper Bobble Head"
+        example: "Baby Yoda Sipping Soup Tee"
       - name: prod-price
         type: value
-        example: "14.99"
+        example: "22.99"
       - name: prod-desc
         type: string
-        example: ""
-      - name: prod-deets
+        example: "A cotton tee with the best baby! (Mando's favourite shirt)."
+      - name: prod-deets1
         type: string
-        example: "50% cotton / 50% polyester"
+        example: "100% cotton"
+      - name: prod-deets2
+        type: string
+        example: "Available in sizes XS – XXL"
       - name: prod-ship
         type: string
         example: "Please allow 2-3 weeks for delivery."
