@@ -1,0 +1,52 @@
+.slide {
+  width: 100%;
+}
+
+.panels {
+  padding-top: 100%;
+  position: relative;
+}
+
+.panels .slide {
+  display: none;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.panels .slide:first-child {
+  display: block;
+}
+
+.tabs {
+  margin: 0;
+  padding: 1em 0;
+
+  text-align: center;
+}
+
+.tabs > li {
+  display: inline-block;
+}
+
+.tabs-btn {
+  display: block;
+  width: 125px;
+  height: 125px;
+
+  text-decoration: none;
+}
+
+.btn-img {
+  width: 125px;
+}
+
+.tab-btn:hover .btn-img {
+  border: 5px solid var(--color-accent);
+}
+
+.tab-current {
+  border: 5px solid var(--color-secondary);
+}

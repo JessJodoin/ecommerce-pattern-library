@@ -7,6 +7,13 @@ patterns:
     title: "Photo Array"
     description: |
       This is the photo array section. It is to only be used on the product details pages, and should always be located to the left of the product details section.
+    fields:
+      - name: img1
+        type: image
+        example: "bb-yoda-t-1.jpg"
+      - name: img2
+        type: image
+        example: "bb-yoda-t-2.jpg"
   product-details:
     title: "Product Details"
     description: |
