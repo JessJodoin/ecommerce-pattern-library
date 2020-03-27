@@ -8,19 +8,20 @@ patterns:
     description: |
       This is the standard product card. Each card should contain a product image, product title, and price.
     padding: 2em
+    width: 25em
     fields:
       - name: title
         type: string
-        example: "Stormtrooper Bobble Head"
+        example: "Sticker Pack - Baby Yoda, Babu Frik, Anakin"
       - name: term
         type: value
-        example: "14.99"
+        example: "4.99"
       - name: image
         type: image
-        example: "product-stbh.jpg"
+        example: "stickers.jpg"
       - name: alt
         type: string
-        example: "An image of a stormtrooper bobble head holding a blaster, on a black stand with text 'Stormtrooper' written on the front."
+        example: "An image of Baby Yoda, Babu Frik, and Anakin kicking a sand castle stickers."
       - name: url
         type: url
         example: "/products-1.html"
@@ -29,25 +30,26 @@ patterns:
     description: |
       This is a sale product card and is used for item that go on sale. Each card must contain a product image, product title, and original price and sale price.
     padding: 2em
+    width: 25em
     fields:
       - name: title
         type: string
-        example: "Stormtrooper Bobble Head"
+        example: "Bantha Fodder Sweatshirt"
       - name: term
         type: value
-        example: "14.99"
+        example: "24.99"
       - name: price
         type: value
-        example: "10.99"
+        example: "15.99"
       - name: image
         type: image
-        example: "product-stbh.jpg"
+        example: "sweater-grey.jpg"
       - name: icon
         type: image
         example: "icons.svg#sale-icon"
       - name: alt
         type: string
-        example: "An image of a stormtrooper bobble head holding a blaster, on a black stand with text 'Stormtrooper' written on the front."
+        example: "An image of a grey long-sleeve sweatshirt with a black design of a Bantha and reads 'Bantha Fodder'."
       - name: url
         type: url
         example: "/products-1.html"
@@ -56,22 +58,23 @@ patterns:
     description: |
       This is a new product card and is used for new items added to the shop. Each card must contain a product image, product title, and original price and sale price.
     padding: 2em
+    width: 25em
     fields:
       - name: title
         type: string
-        example: "Stormtrooper Bobble Head"
+        example: "Han Shot First Tee"
       - name: term
         type: value
-        example: "14.99"
+        example: "22.99"
       - name: image
         type: image
-        example: "product-stbh.jpg"
+        example: "t-black-1.jpg"
       - name: icon
         type: image
         example: "icons.svg#new-icon"
       - name: alt
         type: string
-        example: "An image of a stormtrooper bobble head holding a blaster, on a black stand with text 'Stormtrooper' written on the front."
+        example: "An image of a black t-shirt with the design 'Han Shot First' where 'Shot' is replaced by an illustration of Han's blaster with a blaster bolt."
       - name: url
         type: url
         example: "/products-1.html"
@@ -95,13 +98,14 @@ patterns:
     description: |
       This is a category card and is used to link to item categories such as men, womens, sale, shirts, etc.
     padding: 2em
+    width: 25em
     fields:
       - name: title
         type: string
-        example: "Collectibles "
+        example: "Mugs"
       - name: image
         type: image
-        example: "product-stpf.jpg"
+        example: "mugs-white.jpg"
       - name: url
         type: url
         example: "/products-1.html"

@@ -10,13 +10,13 @@ patterns:
     fields:
       - name: title
         type: string
-        example: "Select collectibles up to 50% off!"
+        example: "Select mugs up to 50% off!"
       - name: details
         type: string
         example: "Get them now, sale ends May 4th"
       - name: image
         type: image
-        example: "product-stpf.jpg"
+        example: "mugs-banner.jpg"
   text-section:
     title: "Text Section"
     description: |
@@ -32,16 +32,17 @@ patterns:
     title: "Item Summary"
     description: |
       This is the item summary section. It contains all the information about the product being purchased. It should only be used on the checkout page, to the left of the order summary.
+    width: 32em
     fields:
       - name: image
         type: image
-        example: "product-stbh.jpg"
+        example: "wo-t-white-1.jpg"
       - name: product-name
         type: string
-        example: "Stormtrooper Bobble Head"
+        example: "Bantha Fodder Tee - White"
       - name: price
         type: value
-        example: "14.99"
+        example: "22.99"
       - name: quantity
         type: value
         example: "1"

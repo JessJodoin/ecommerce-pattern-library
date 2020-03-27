@@ -2,6 +2,10 @@
   max-width: 20em;
 }
 
+.embed-3by1-5 {
+  padding-top: 47%;
+}
+
 .text-sec {
   max-width: 25em;
 }
@@ -19,6 +23,7 @@
 
 .item-img {
   border-radius: 15px;
+  max-width: 250px;
 }
 
 .trash-icon {
@@ -43,7 +48,7 @@
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    color: var(--color-primary-opposite);
+    color: var(--color-primary);
   }
 
 }
