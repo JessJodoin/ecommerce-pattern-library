@@ -2,12 +2,12 @@
 layout: default
 ---
 
-<div>
-  <div>
+<div class="grid grid-middle gutter-1-4">
+  <div class="unit xs-1 s-1 m-1-2 l-1-2 gutter-1-2">
     {% pattern product-sections/photo-array img1="{{page.image1}}" alt-array1="{{page.image1-alt}}" aria-array1="{{page.image1-aria}}" img2="{{page.image2}}" alt-array2="{{page.image2-alt}}" aria-array2="{{page.image2-aria}}" %}
   </div>
 
-  <div>
+  <div class="unit xs-1 s-1 m-1-2 l-1-2 gutter-1-2">
     {% pattern product-sections/product-details prod-name="{{page.name}}" prod-price="{{page.price}}" prod-desc="{{page.description}}" prod-deets1="{{page.materials}}" prod-deets2="{{page.availability}}" prod-ship="{{page.delivery}}" %}
   </div>
 </div>
