@@ -7,4 +7,6 @@ $('.tab-btn').on('click', function () {
 
   hideAllSlides();
   $(id).css('display', 'block');
+
+  $(this).toggleClass('tab-current')
 });

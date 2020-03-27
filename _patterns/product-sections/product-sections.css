@@ -47,6 +47,6 @@
   border: 5px solid var(--color-accent);
 }
 
-.tab-current {
+.tab-current img {
   border: 5px solid var(--color-secondary);
 }
