@@ -20,7 +20,7 @@ patterns:
         example: "22.99"
       - name: prod-desc
         type: string
-        example: "A cotton tee with the best baby! (Mando's favourite shirt)."
+        example: "A cotton tee with the best baby! (A.K.A.: Mando's favourite shirt)."
       - name: prod-deets1
         type: string
         example: "100% cotton"
