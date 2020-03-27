@@ -1,5 +1,6 @@
 var hideAllSlides = function () {
   $('.slide').css('display', 'none');
+  $('.tab-btn').removeClass('tab-current');
 };
 
 $('.tab-btn').on('click', function () {
@@ -8,5 +9,5 @@ $('.tab-btn').on('click', function () {
   hideAllSlides();
   $(id).css('display', 'block');
 
-  $(this).toggleClass('tab-current')
+  $(this).addClass('tab-current')
 });
