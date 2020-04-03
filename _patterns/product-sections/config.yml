@@ -8,22 +8,22 @@ patterns:
     description: |
       This is the photo array section. It is to only be used on the product details pages, and should always be located to the left of the product details section.
     fields:
-      - name: img1
+      - name: image1
         type: image
         example: "/images/bb-yoda-t-1.jpg"
-      - name: img2
+      - name: image2
         type: image
         example: "/images/bb-yoda-t-2.jpg"
-      - name: alt1
+      - name: image1-alt
         type: string
         example: "An image of a man wearing a white t-shirt with a design of Baby Yoda Sipping Soup on the front."
-      - name: alt2
+      - name: image2-alt
         type: string
         example: "An image of a man wearing a white t-shirt with a design of Baby Yoda Sipping Soup on the front."
-      - name: aria1
+      - name: image1-aria
         type: string
         example: "An image of a man wearing a white t-shirt with a design of Baby Yoda Sipping Soup on the front."
-      - name: aria2
+      - name: image2-aria
         type: string
         example: "An image of a man wearing a white t-shirt with a design of Baby Yoda Sipping Soup on the front."
   product-details:
@@ -31,21 +31,21 @@ patterns:
     description: |
       This is the product details section. It is to only be used on the product details pages, and should always be located to the right of a photo array.
     fields:
-      - name: prod-name
+      - name: name
         type: string
         example: "Baby Yoda Sipping Soup Tee"
-      - name: prod-price
+      - name: price
         type: value
         example: "22.99"
-      - name: prod-desc
+      - name: description
         type: string
         example: "A cotton tee with the best baby! (A.K.A.: Mando's favourite shirt)."
-      - name: prod-deets1
+      - name: material
         type: string
         example: "100% cotton"
-      - name: prod-deets2
+      - name: availability
         type: string
         example: "Available in sizes XS – XXL"
-      - name: prod-ship
+      - name: shipping
         type: string
         example: "Please allow 2-3 weeks for delivery."
