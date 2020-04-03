@@ -8,11 +8,24 @@ patterns:
     description: |
       This is the photo array section. It is to only be used on the product details pages, and should always be located to the left of the product details section.
     fields:
-      - name: array
-        type: object
-        data:
-          source: "site.products[0]"
-          type: Product
+      - name: img1
+        type: image
+        example: "/images/bb-yoda-t-1.jpg"
+      - name: img2
+        type: image
+        example: "/images/bb-yoda-t-2.jpg"
+      - name: alt1
+        type: string
+        example: "An image of a man wearing a white t-shirt with a design of Baby Yoda Sipping Soup on the front."
+      - name: alt2
+        type: string
+        example: "An image of a man wearing a white t-shirt with a design of Baby Yoda Sipping Soup on the front."
+      - name: aria1
+        type: string
+        example: "An image of a man wearing a white t-shirt with a design of Baby Yoda Sipping Soup on the front."
+      - name: aria2
+        type: string
+        example: "An image of a man wearing a white t-shirt with a design of Baby Yoda Sipping Soup on the front."
   product-details:
     title: "Product Details"
     description: |
