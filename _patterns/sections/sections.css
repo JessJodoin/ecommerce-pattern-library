@@ -27,8 +27,9 @@
 }
 
 .trash-icon {
-  top: 2.5em;
-  right: 6.5em;
+  position: absolute;
+  top: 4em;
+  left: 15em;
 }
 
 .order-summ {

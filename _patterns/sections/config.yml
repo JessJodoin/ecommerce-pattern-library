@@ -46,6 +46,9 @@ patterns:
       - name: quantity
         type: value
         example: "1"
+      - name: size
+        type: string
+        example: "M"
       - name: item-num
         type: string
         example: "7429384601"
