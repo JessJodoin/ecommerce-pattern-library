@@ -8,7 +8,7 @@ patterns:
     description: |
       This is the photo array section. It is to only be used on the product details pages, and should always be located to the left of the product details section.
     fields:
-      - name: prod-array
+      - name: array
         type: object
         data:
           source: "site.products[0]"

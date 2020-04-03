@@ -10,21 +10,11 @@ patterns:
     padding: 2em
     width: 25em
     fields:
-      - name: title
-        type: string
-        example: "Sticker Pack - Baby Yoda, Babu Frik, Anakin"
-      - name: term
-        type: value
-        example: "4.99"
-      - name: image
-        type: image
-        example: "stickers.jpg"
-      - name: alt
-        type: string
-        example: "An image of Baby Yoda, Babu Frik, and Anakin kicking a sand castle stickers."
-      - name: url
-        type: url
-        example: "/products-1.html"
+      - name: prod-card
+        type: object
+        data:
+          source: "site.products[0]"
+          type: Product
   sale-card:
     title: "Sale Card"
     description: |
@@ -100,12 +90,8 @@ patterns:
     padding: 2em
     width: 25em
     fields:
-      - name: title
-        type: string
-        example: "Mugs"
-      - name: image
-        type: image
-        example: "mugs-white.jpg"
-      - name: url
-        type: url
-        example: "/products-1.html"
+      - name: catcard
+        type: object
+        data:
+          source: ""
+          type: Product
