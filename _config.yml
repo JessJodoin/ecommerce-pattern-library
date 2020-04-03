@@ -32,11 +32,11 @@ patternbot:
       The default layout should be used for alomst every page, it includes the website’s main header and footer.
     product: |
       The product layout should be used for each individual product only. It includes a photo array of the product and the product's details.
-  collections:
-    products:
-      output: true
-  defaults:
-    - scope:
-        path: _product
-      values:
-        layout: product
+collections:
+  products:
+    output: true
+defaults:
+  - scope:
+      path: _product
+    values:
+      layout: product
