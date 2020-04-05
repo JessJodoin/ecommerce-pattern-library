@@ -2,7 +2,7 @@
 name: "Mandalorian Patch Jeans"
 description: |
   It is the way! Medium-wash denim jeans with a Mando Patch.
-image1: "/image/wo-pants.jpg"
+image1: "/images/wo-pants.jpg"
 image1-alt: |
   An image of a woman wearing jeans with a Mandalorian patch on the side.
 image1-aria: |

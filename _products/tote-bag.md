@@ -2,7 +2,7 @@
 name: "Anakin Hates Sand Tote Bag"
 description: |
   It's gets everywhere! It's irritating! A cotton tote bag that shows Anakin's true feelings!
-image1: "/image/tote-bag.jpg"
+image1: "/images/tote-bag.jpg"
 image1-alt: |
   An image of a tote bag with the design of Anakin kicking a sand castle on the front.
 image1-aria: |

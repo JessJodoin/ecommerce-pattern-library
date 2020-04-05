@@ -2,7 +2,7 @@
 name: "Bantha Fodder Tee"
 description: |
   Bantha Fodder! A cotton t-shirt with a galactic insult!
-image1: "/image/wo-t-white-1.jpg"
+image1: "/images/wo-t-white-1.jpg"
 image1-alt: |
   An image of a woman wearing a white t-shirt with a design of a bantha with the text 'Bantha Fodder' on the front.
 image1-aria: |

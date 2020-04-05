@@ -2,7 +2,7 @@
 name: "Baby Mando Tee"
 description: |
   A kids cotton tee with baby Mando!
-image1: "/image/kids-t-white.jpg"
+image1: "/images/kids-t-white.jpg"
 image1-alt: |
   An image of a child wearing a white t-shirt with a design of Baby Mandalorian on the front.
 image1-aria: |

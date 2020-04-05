@@ -2,7 +2,7 @@
 name: "Babu Frik Tee"
 description: |
   Hey! Hey! A cotton t-shirt with Babu!
-image1: "/image/t-black-2.jpg"
+image1: "/images/t-black-2.jpg"
 image1-alt: |
   An image of a man wearing a black t-shirt with a design of Babu Frik on the front.
 image1-aria: |

@@ -2,12 +2,12 @@
 name: "Sticker Pack"
 description: |
   Pack includes Baby Yoda, Babu Frik, and Anakin stickers (2 of each).
-image1: "/image/stickers.jpg"
+image1: "/images/stickers.jpg"
 image1-alt: |
   An image of Baby Yoda, Babu Frik, and Anakin kicking a sand castle stickers.
 image1-aria: |
   An image of Baby Yoda, Babu Frik, and Anakin kicking a sand castle stickers.
-image2: "/image/phone-case-stickers.jpg"
+image2: "/images/phone-case-stickers.jpg"
 image2-alt: |
   An image of Baby Yoda, Babu Frik, and Anakin kicking a sand castle stickers placed on the back of a phone case.
 image2-aria: |

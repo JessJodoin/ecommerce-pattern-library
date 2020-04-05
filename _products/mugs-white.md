@@ -2,7 +2,7 @@
 name: "Babu Frik Mug"
 description: |
   Hey! Hey! A ceramic mug with Babu Frik!
-image1: "/image/mugs-white.jpg"
+image1: "/images/mugs-white.jpg"
 image1-alt: |
   An image of a white ceramic mug with a design of Babu Frik on the front.
 image1-aria: |

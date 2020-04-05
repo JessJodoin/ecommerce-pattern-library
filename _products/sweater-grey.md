@@ -2,7 +2,7 @@
 name: "Bantha Fodder Sweatshirt"
 description: |
   Bantha Fodder! A cotton sweatshirt with a galactic insult!
-image1: "/image/sweater-grey.jpg"
+image1: "/images/sweater-grey.jpg"
 image1-alt: |
   An image of a man wearing a grey sweatshirt with a design of a bantha with the text 'Bantha Fodder' on the front.
 image1-aria: |

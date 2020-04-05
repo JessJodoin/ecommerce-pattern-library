@@ -2,7 +2,7 @@
 name: "Han Shot First Tee"
 description: |
   A cotton t-shirt showing where you stand! (Y'know before they changed the canon)
-image1: "/image/t-black-1.jpg"
+image1: "/images/t-black-1.jpg"
 image1-alt: |
   An image of a man wearing a black t-shirt with a design of Han's blaster surrounded by the text 'Han' and 'Shot' on the front.
 image1-aria: |
