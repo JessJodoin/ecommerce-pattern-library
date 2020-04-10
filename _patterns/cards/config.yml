@@ -10,21 +10,11 @@ patterns:
     padding: 2em
     width: 25em
     fields:
-      - name: title
-        type: string
-        example: "Sticker Pack"
-      - name: price
-        type: value
-        example: "4.99"
-      - name: image
-        type: image
-        example: "/images/stickers.jpg"
-      - name: url
-        type: string
-        example: ""
-      - name: alt
-        type: string
-        example: "An image of Baby Yoda, Babu Frik, and Anakin kicking a sand castle stickers."
+      - name: data
+        type: object
+        data:
+          source: "site.products[0]"
+          type: Product
   sale-card:
     title: "Sale Card"
     description: |
@@ -32,27 +22,11 @@ patterns:
     padding: 2em
     width: 25em
     fields:
-      - name: title
-        type: string
-        example: "Bantha Fodder Sweatshirt"
-      - name: term
-        type: value
-        example: "24.99"
-      - name: price
-        type: value
-        example: "15.99"
-      - name: image
-        type: image
-        example: "sweater-grey.jpg"
-      - name: icon
-        type: image
-        example: "icons.svg#sale-icon"
-      - name: alt
-        type: string
-        example: "An image of a grey long-sleeve sweatshirt with a black design of a Bantha and reads 'Bantha Fodder'."
-      - name: url
-        type: url
-        example: "/products-1.html"
+      - name: data
+        type: object
+        data:
+          source: "site.products[0]"
+          type: Product
   new-card:
     title: "New Item Card"
     description: |
@@ -60,24 +34,11 @@ patterns:
     padding: 2em
     width: 25em
     fields:
-      - name: title
-        type: string
-        example: "Han Shot First Tee"
-      - name: term
-        type: value
-        example: "22.99"
-      - name: image
-        type: image
-        example: "t-black-1.jpg"
-      - name: icon
-        type: image
-        example: "icons.svg#new-icon"
-      - name: alt
-        type: string
-        example: "An image of a black t-shirt with the design 'Han Shot First' where 'Shot' is replaced by an illustration of Han's blaster with a blaster bolt."
-      - name: url
-        type: url
-        example: "/products-1.html"
+      - name: data
+        type: object
+        data:
+          source: "site.products[0]"
+          type: Product
   icon-cards:
     title: "Icon Card"
     description: |

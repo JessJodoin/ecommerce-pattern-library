@@ -13,7 +13,9 @@ image2-alt: |
 image2-aria: |
   An image of Baby Yoda, Babu Frik, and Anakin kicking a sand castle stickers placed on the back of a phone case.
 price: 4.99
+sale-price: 1.99
 material: "Vinyl"
-availability: "One size (approx. 1" by 1")"
+availability: |
+  One size (approx. 1" by 1")
 shipping: "Please allow for 1–2 weeks for delivery."
 ---

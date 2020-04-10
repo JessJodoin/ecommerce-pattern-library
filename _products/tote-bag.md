@@ -8,9 +8,11 @@ image1-alt: |
 image1-aria: |
   An image of a tote bag with the design of Anakin kicking a sand castle on the front.
 price: 13.99
+sale-price: 9.99
 color: "Tan"
 bag: true
 material: "100% cotton"
-availability: "Available in tan."
+availability: |
+  Available in tan
 shipping: "Please allow for 2–3 weeks for delivery."
 ---

@@ -8,6 +8,7 @@ image1-alt: |
 image1-aria: |
   An image of a woman wearing a white t-shirt with a design of a bantha with the text 'Bantha Fodder' on the front.
 price: 15.99
+sale-price: 10.99
 color: "White"
 size:
   - "XS"
@@ -18,6 +19,7 @@ size:
   - "XXL"
 sweater: true
 material: "100% cotton"
-availability: "Available in sizes XS – XXL"
+availability: |
+  Available in sizes XS – XXL
 shipping: "Please allow for 2–3 weeks for delivery."
 ---

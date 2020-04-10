@@ -13,6 +13,7 @@ image2-alt: |
 image2-aria: |
   An image of a man wearing a white t-shirt with a design of Baby Yoda Sipping Soup on the front.
 price: 22.99
+sale-price: 18.99
 color: "White"
 size:
   - "XS"
@@ -23,6 +24,7 @@ size:
   - "XXL"
 t-shirt: true
 material: "100% cotton"
-availability: "Available in sizes XS – XXL"
+availability: |
+  Available in sizes XS – XXL
 shipping: "Please allow for 2–3 weeks for delivery."
 ---
