@@ -58,3 +58,7 @@ ol > li::before {
 mark {
   background-color: var(--color-accent);
 }
+
+hr {
+  border-color: var(--color-neutral-grey);
+}

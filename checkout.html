@@ -3,3 +3,114 @@ layout: default
 title: "Checkout"
 ---
 {% pattern banners/basic title="Checkout" %}
+
+<div class="island wrapper">
+  {% pattern banners/checkout-banner num="1" title="Shipping Information" %}
+
+  <form class="push pad-t" method="post" action="#" novalidate>
+    <fieldset class="push-0 gutter-1-2">
+      <legend class="push-0 gutter-1-2 tera">Enter your shipping address</legend>
+      <div class="error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
+        <h3 class="push-0 kilo">
+          <i class="icon i-32"><svg><use xlink:href="/images/icons.svg#warning" /></svg></i>
+          <span class="icon-label gutter-1-4">There are some items that require your attention</span>
+        </h3>
+      </div>
+
+      <div class="grid">
+        <div class="unit xs-1 s-1 m-1 l-1">
+          {% pattern form/select-region id="country" label="Country/Region" details="You must select a country or region" error="region-error" %}
+        </div>
+
+        <div class="unit xs-1 s-1 m-1-2 l-1-2">
+          {% pattern form/required-basic title="First Name" id="first-name" details="a first name" error="first-name-error" type="text" placeholder="" %}
+        </div>
+
+        <div class="unit xs-1 s-1 m-1-2 l-1-2">
+          {% pattern form/required-basic title="Last Name" id="last-name" details="a last name" error="last-name-error" type="text" placeholder="" %}
+        </div>
+
+        <div class="unit xs-1 s-1 m-1 l-1">
+          {% pattern form/required-basic title="Address 1" id="address-1" details="an address" error="address1-error" type="text" placeholder="" %}
+        </div>
+
+        <div class="unit xs-1 s-1 m-1 l-1">
+          {% pattern form/basic-form title="Address 2" id="address-2" type="text" placeholder="" %}
+        </div>
+
+        <div class="unit xs-1 s-1 m-1-2 l-1-2">
+          {% pattern form/required-basic title="City" id="city" details="your city" error="city-error" type="text" placeholder="" %}
+        </div>
+
+        <div class="unit xs-1 s-1-2 m-1-2 l-1-2">
+          {% pattern form/required-basic title="Province" id="prov" details="your province" error="prov-error" type="text" placeholder="" %}
+        </div>
+
+        <div class="unit xs-1 s-1-2 m-1-2 l-1-2">
+          {% pattern form/required-basic title="Postal Code" id="postal" details="your postal code" error="postal-error" type="text" placeholder="" %}
+        </div>
+
+        <div class="unit xs-1 s-1-2 m-1-2 l-1-2">
+          {% pattern form/required-basic title="Phone Number" id="phone" details="your phone number" error="phone-error" type="text" placeholder="" %}
+        </div>
+
+        <div class="unit xs-1 s-1 m-1 l-1">
+          {% pattern form/radio legend="Choose a Delivery Method" id1="std-ship" id2="2d-ship" id3="1d-ship" name="ship" label1="Standard Shipping" label2="2-Day Express" label3="1-Day Express" price1="&#36 5.99" price2="&#36 8.99" price3="&#36 11.99" description1="Normally ships in 4–5 business days, unless otherwise noted." description2="Normally ships in 2 business days, unless otherwise noted." description3="Normally ships in 1 business day, unless otherwise noted." details="You must select a delivery method" error="ship-error" %}
+        </div>
+
+        <div class="unit xs-1 s-1 m-1 l-1">
+          {% pattern banners/checkout-banner num="2" title="Payment Information" %}
+        </div>
+
+        <div class="unit xs-1 s-1 m-1 l-1">
+          {% pattern form/radio legend="Choose Payment Type" id1="vitza" id2="mrstrcrd" id3="poypel" name="pay" label1="Vitza" label2="Mrsrtcrd" label3="Poypel" price1="" price2="" price3="" description1="" description2="" description3="" details="You must select a method of payment" error="pay-error" %}
+        </div>
+
+        <div class="unit xs-1 s-1 m-1 l-1">
+          {% pattern form/required-basic title="Cardholder Name" id="card-name" details="cardholder's name" error="card-name-error" type="text" placeholder="" %}
+        </div>
+
+        <div class="unit xs-1 s-1 m-1-2 l-1-2">
+          {% pattern form/required-basic title="Card Number" id="cardnum-name" details="a valid credit card number" error="cardnum-error" type="text" placeholder="" %}
+        </div>
+
+        <div class="unit xs-1 s-1 m-1-2 l-1-2">
+          {% pattern form/required-basic title="CVV" id="cvv-name" details="a valid CVV" error="cvv-error" type="text" placeholder="" %}
+        </div>
+
+        <div class="unit xs-1 s-1 m-1 l-1 pad-b-1-2 pad-t push-1-2">
+          {% pattern banners/checkout-banner num="3" title="Confirm Information" %}
+        </div>
+
+        <div class="unit xs-1 s-1 m-1 l-1 gutter">
+          {% pattern form/basic-checkbox label="Would you like to receive promotional offers?" id="promo-offers" %}
+        </div>
+
+        <div class="unit xs-1 s-1 m-1 l-1 gutter">
+          {% pattern form/required-checkbox label="Agree to Terms and Servies" id="tos" details="You must agree to the Terms and Services" error="tos-error" %}
+        </div>
+      </div>
+
+      <div class="center-content pad-t">
+        {% pattern buttons/submit title="Submit" %}
+      </div>
+    </fieldset>
+  </form>
+</div>
+
+<div class="gutter push-2">
+  <hr class="pad-b">
+
+  <div class="grid grid-top">
+    <div class="unit xs-1 s-1 m-1 l-1-2 push">
+      <h3 class="gutter">Item Summary</h3>
+      {% pattern sections/item-summary image="wo-t-white-1.jpg" product-name="Bantha Fodder Tee - White" price="22.99" quantity="1" size="M" item-num="7429384601" icon="icons.svg#trash-icon" %}
+    </div>
+
+    <div class="unit xs-1 s-1 m-1 l-1-2 gutter-1-8">
+      {% pattern sections/order-summary subtotal="22.99" snh="5.99" tax="4.35" total="33.33" %}
+    </div>
+  </div>
+</div>
+
+<script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
