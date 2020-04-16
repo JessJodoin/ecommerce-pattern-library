@@ -61,12 +61,8 @@ patterns:
     padding: 2em
     width: 25em
     fields:
-      - name: title
-        type: string
-        example: "Mugs"
-      - name: image
-        type: image
-        example: "/images/mugs-white.jpg"
-      - name: url
-        type: string
-        example: ""
+      - name: data
+        type: object
+        data:
+          source: "site.categories[0]"
+          type: category

@@ -154,6 +154,7 @@
 
 .side-nav {
   background-color: var(--color-primary);
+  height: 100%;
 }
 
 #filters,
