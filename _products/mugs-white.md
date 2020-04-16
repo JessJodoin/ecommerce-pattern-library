@@ -15,4 +15,5 @@ material: "Creamic"
 availability: |
   Available in white
 shipping: "Please allow for 2–3 weeks for delivery."
+category: "Mugs"
 ---

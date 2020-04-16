@@ -22,4 +22,5 @@ material: "100% denim"
 availability: |
   Available in sizes XS – XXL
 shipping: "Please allow for 2–3 weeks for delivery."
+category: "Pants"
 ---

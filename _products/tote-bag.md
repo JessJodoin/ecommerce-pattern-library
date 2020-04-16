@@ -15,4 +15,5 @@ material: "100% cotton"
 availability: |
   Available in tan
 shipping: "Please allow for 2–3 weeks for delivery."
+category: "Accessories"
 ---

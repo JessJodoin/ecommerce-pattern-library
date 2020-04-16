@@ -18,4 +18,5 @@ material: "Vinyl"
 availability: |
   One size (approx. 1" by 1")
 shipping: "Please allow for 1–2 weeks for delivery."
+category: "Stickers"
 ---

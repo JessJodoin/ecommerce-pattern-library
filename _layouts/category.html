@@ -1,1 +1,4 @@
-
+{% assign category_products=site.products|where:"category","shirts" %}
+{% for product in category_products %}
+  {% pattern cards/product-cards data=product %}
+{% endfor %}
