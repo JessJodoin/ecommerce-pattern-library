@@ -37,15 +37,13 @@ patternbot:
 collections:
   products:
     output: true
+  categories:
+    output: true
 defaults:
   - scope:
       path: _products
     values:
       layout: product
-collections:
-  categories:
-    output: true
-defaults:
   - scope:
       path: _categories
     values:
