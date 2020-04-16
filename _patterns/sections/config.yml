@@ -77,3 +77,9 @@ patterns:
     title: "Recommened Products Section"
     description: |
       This is a recommened products section. It is used at the bottom of products pages to display similar recommened products.
+    fields:
+      - name: data
+        type: object
+        data:
+          source: "site.products[0]"
+          type: product

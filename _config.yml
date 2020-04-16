@@ -37,6 +37,6 @@ collections:
     output: true
 defaults:
   - scope:
-      path: _product
+      path: _products
     values:
       layout: product

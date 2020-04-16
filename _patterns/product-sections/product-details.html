@@ -1,7 +1,7 @@
 <div class="gutter pad-t">
   <div class="gutter-1-2 push-1-2">
-    <h2 class="push-1-4">{{include.name}}</h2>
-    <p>&#36; {{include.price}}</p>
+    <h2 class="push-1-4">{{include.data.name}}</h2>
+    <p>&#36; {{include.data.price}}</p>
   </div>
 
   <div class="grid grid-middle pad-b">
@@ -19,19 +19,19 @@
   </div>
 
   <div class="gutter-1-2">
-    <p class="push-2">{{include.description}}</p>
+    <p class="push-2">{{include.data.description}}</p>
 
     <div class="push-2">
       <h3 class="push-1-2">Product Details</h3>
       <ul class="gutter">
-        <li>{{include.material}}</li>
-        <li>{{include.availability}}</li>
+        <li>{{include.data.material}}</li>
+        <li>{{include.data.availability}}</li>
       </ul>
     </div>
 
     <div>
       <h3 class="push-1-2">Shipping Details</h3>
-      <p>{{include.shipping}}</p>
+      <p>{{include.data.shipping}}</p>
     </div>
   </div>
 </div>

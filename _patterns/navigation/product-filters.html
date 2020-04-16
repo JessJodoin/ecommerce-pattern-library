@@ -1,5 +1,5 @@
 <nav class="side-nav bold">
-  <button class="mega island-1-2" id="filters">
+  <button class="mega island" id="filters">
     <span class="icon-label">Filters</span>
     <i class="icon i-24 filter-btn-open">
       <svg><use xlink:href="/images/icons.svg#right-arrow" /></svg>
@@ -13,7 +13,7 @@
     {% for menu in site.data.filters %}
       <div>
         <button class="filter-btn island">
-          <span class="icon-label">{{menu.name}}</span>
+          <span class="icon-label milli">{{menu.name}}</span>
           {% if menu.items %}
             <i class="icon i-24 filter-btn-open">
               <svg><use xlink:href="/images/icons.svg#right-arrow" /></svg>

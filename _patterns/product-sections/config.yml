@@ -8,44 +8,18 @@ patterns:
     description: |
       This is the photo array section. It is to only be used on the product details pages, and should always be located to the left of the product details section.
     fields:
-      - name: image1
-        type: image
-        example: "/images/bb-yoda-t-1.jpg"
-      - name: image2
-        type: image
-        example: "/images/bb-yoda-t-2.jpg"
-      - name: image1-alt
-        type: string
-        example: "An image of a man wearing a white t-shirt with a design of Baby Yoda Sipping Soup on the front."
-      - name: image2-alt
-        type: string
-        example: "An image of a man wearing a white t-shirt with a design of Baby Yoda Sipping Soup on the front."
-      - name: image1-aria
-        type: string
-        example: "An image of a man wearing a white t-shirt with a design of Baby Yoda Sipping Soup on the front."
-      - name: image2-aria
-        type: string
-        example: "An image of a man wearing a white t-shirt with a design of Baby Yoda Sipping Soup on the front."
+      - name: data
+        type: object
+        data:
+          source: "site.products[0]"
+          type: product
   product-details:
     title: "Product Details"
     description: |
       This is the product details section. It is to only be used on the product details pages, and should always be located to the right of a photo array.
     fields:
-      - name: name
-        type: string
-        example: "Baby Yoda Sipping Soup Tee"
-      - name: price
-        type: value
-        example: "22.99"
-      - name: description
-        type: string
-        example: "A cotton tee with the best baby! (A.K.A.: Mando's favourite shirt)."
-      - name: material
-        type: string
-        example: "100% cotton"
-      - name: availability
-        type: string
-        example: "Available in sizes XS – XXL"
-      - name: shipping
-        type: string
-        example: "Please allow 2-3 weeks for delivery."
+      - name: data
+        type: object
+        data:
+          source: "site.products[0]"
+          type: product

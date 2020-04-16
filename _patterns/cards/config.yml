@@ -14,7 +14,7 @@ patterns:
         type: object
         data:
           source: "site.products[0]"
-          type: Product
+          type: product
   sale-card:
     title: "Sale Card"
     description: |
@@ -26,7 +26,7 @@ patterns:
         type: object
         data:
           source: "site.products[0]"
-          type: Product
+          type: product
   new-card:
     title: "New Item Card"
     description: |
@@ -38,7 +38,7 @@ patterns:
         type: object
         data:
           source: "site.products[0]"
-          type: Product
+          type: product
   icon-cards:
     title: "Icon Card"
     description: |
