@@ -62,3 +62,15 @@ mark {
 hr {
   border-color: var(--color-neutral-grey);
 }
+
+.scroll-table {
+  min-width: 30rem;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .scroll-table {
+    overflow: visible;
+  }
+
+}

@@ -11,11 +11,15 @@ highlight_nav: sale
 
   <h2 class="center-content push-0 pad-t-2">Buy Now and Save!</h2>
   <div class="grid grid-stretch island push">
-    {% for product in site.products limit:2 %}
-      <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] island-1-2 unit-content-distribute">
-        {% pattern cards/sale-card data=product %}
-      </div>
-    {% endfor %}
+    <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] island-1-2 unit-content-distribute">
+      {% assign single=site.products[2] %}
+      {% pattern cards/sale-card data=single %}
+    </div>
+
+    <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] island-1-2 unit-content-distribute">
+      {% assign single=site.products[3] %}
+      {% pattern cards/sale-card data=single %}
+    </div>
   </div>
 
   <div class="gutter max-length">
