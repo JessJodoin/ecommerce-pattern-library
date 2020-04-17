@@ -7,18 +7,20 @@ highlight_nav: sale
 <div id="main">
   {% pattern banners/promotional-banner title="All stickers are 25% off!" details="When you buy 10, offer lasts until May 4th." href="/sale/" %}
 
-  {% pattern sections/full-img-section button_url="/sale/" button_title="Buy Now" title="Select mugs up to 50% off!" details="When you buy in bulk, sale ends May 4th" image="mugs-banner.jpg" %}
+  {% pattern sections/full-img-section button_url="/sale/" button_title="Buy Now" title="Select mugs up to 50% off!" details="When you buy 3 or more, sale ends May 4th" image="mugs-banner.jpg" %}
 
   <h2 class="center-content push-0 pad-t-2">Buy Now and Save!</h2>
-  <div class="grid grid-stretch island push">
-    <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] island-1-2 unit-content-distribute">
-      {% assign single=site.products[2] %}
-      {% pattern cards/sale-card data=single %}
-    </div>
+  <div class="wrapper">
+    <div class="grid grid-stretch island push">
+      <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] island unit-content-distribute">
+        {% assign single=site.products[2] %}
+        {% pattern cards/sale-card data=single %}
+      </div>
 
-    <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] island-1-2 unit-content-distribute">
-      {% assign single=site.products[3] %}
-      {% pattern cards/sale-card data=single %}
+      <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] island unit-content-distribute">
+        {% assign single=site.products[3] %}
+        {% pattern cards/sale-card data=single %}
+      </div>
     </div>
   </div>
 
