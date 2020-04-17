@@ -4,25 +4,27 @@ title: "Products"
 highlight_nav: shop
 ---
 
-{% pattern banners/call-to-action title="Raiders" details="Check out all the best credits can buy!" %}
+<div id="main">
+  {% pattern banners/call-to-action title="Raiders" details="Check out all the best credits can buy!" %}
 
-{% pattern banners/basic title="Shop" %}
+  {% pattern banners/basic title="Shop" %}
 
-<div class="grid">
-  <div class="unit xs-1 s-1 m-1-3 l-1-5">
-    {% pattern navigation/product-filters icon="icons.svg#right-arrow" %}
-  </div>
+  <div class="grid">
+    <div class="unit xs-1 s-1 m-1-3 l-1-5">
+      {% pattern navigation/product-filters icon="icons.svg#right-arrow" %}
+    </div>
 
-  <div class="unit xs-1 s-1 m-2-3 l-4-5">
-    <div class="grid grid-stretch island">
-      {% for product in site.products %}
-        <div class="unit [ xs-1 s-1 m-1-2 l-1-3 ] island-1-2 unit-content-distribute">
-          {% pattern cards/product-cards data=product %}
+    <div class="unit xs-1 s-1 m-2-3 l-4-5">
+      <div class="grid grid-stretch island">
+        {% for product in site.products %}
+          <div class="unit [ xs-1 s-1 m-1-2 l-1-3 ] island-1-2 unit-content-distribute">
+            {% pattern cards/product-cards data=product %}
+          </div>
+        {% endfor %}
+
+        <div class="unit xs-1 pad-t">
+          {% pattern navigation/page-nav arrow-l="icons.svg#left-arrow" arrow-r="icons.svg#right-arrow" %}
         </div>
-      {% endfor %}
-
-      <div class="unit xs-1 pad-t">
-        {% pattern navigation/page-nav arrow-l="icons.svg#left-arrow" arrow-r="icons.svg#right-arrow" %}
       </div>
     </div>
   </div>
