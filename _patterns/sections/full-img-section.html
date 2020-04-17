@@ -6,6 +6,6 @@
   <div class="sec-cont island">
     <h3 class="push-1-4">{{include.title}}</h3>
     <p>{{include.details}}</p>
-    {% pattern buttons/basic title="Shop Now" %}
+    {% pattern buttons/basic title=include.button_title url=include.button_url %}
   </div>
 </div>

@@ -3,3 +3,31 @@ layout: default
 title: "Sale &amp; Bulk"
 highlight_nav: sale
 ---
+
+{% pattern banners/promotional-banner title="All stickers are 25% off!" details="When you buy 10, offer lasts until May 4th." href="/sale/" %}
+
+{% pattern sections/full-img-section button_url="/sale/" button_title="Buy Now" title="Select mugs up to 50% off!" details="When you buy in bulk, sale ends May 4th" image="mugs-banner.jpg" %}
+
+<h2 class="center-content push-0 pad-t-2">Buy Now and Save!</h2>
+<div class="grid grid-stretch island push">
+  {% for product in site.products limit:2 %}
+    <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] island-1-2 unit-content-distribute">
+      {% pattern cards/sale-card data=product %}
+    </div>
+  {% endfor %}
+</div>
+
+<div class="gutter">
+  <hr>
+</div>
+
+<form class="gutter push-2 max-length" method="post" action="#" novalidate>
+  <fieldset>
+    <legend class="pad-t gutter-1-2 giga push-0 not-bold">Sign up to receive the latest about sales and promotions!</legend>
+    {% pattern form/required-basic title="" id="email" details="a vaild email address" error="email-error" type="email" placeholder="example@email.com" %}
+
+    <div class="center-content">
+      {% pattern buttons/submit title="Submit" %}
+    </div>
+  </fieldset>
+</form>

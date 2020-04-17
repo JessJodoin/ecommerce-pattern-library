@@ -17,6 +17,14 @@ patterns:
       - name: image
         type: image
         example: "mugs-banner.jpg"
+      - name: button_title
+        type: string
+        example: "Buy Now"
+        required: false
+      - name: button_url
+        type: url
+        example: "/sale/"
+        required: false
   text-section:
     title: "Text Section"
     description: |
